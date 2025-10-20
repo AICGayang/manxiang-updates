@@ -1,0 +1,11 @@
+   {
+     "version": "2.42.2",
+     "releaseDate": "2025-10-20",
+     "downloadUrl": "https://您的下载链接.com/漫想+v2.42.2.zip",
+     "changelog": [
+       "修复任务队列 Bug",
+       "修复 Sora-2 并发问题",
+       "修复视频播放问题"
+     ],
+     "minVersion": "2.40.0"
+   }
