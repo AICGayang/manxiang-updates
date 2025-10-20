@@ -1,7 +1,7 @@
 {
   "version": "v1.0.1",
   "releaseDate": "2025-10-20",
-  "downloadUrl": "https://developer-oss.lanrar.com/file/?VDJXaQw9ATABCAszATQCblBvVGxe5wG/V/tVtVyDW+lSeVpSAD9XbAgmADNTY1N8BzhQLV9lByMLalU6V2dUMFQLV2kMNQFoAWULaAFtAjZQPFRhXjcBN1diVXVcZlspUm9aNABkVzMIZgBiUz5Tawd7UCVfcAc4Cz5VY1c5VGBUe1cxDGEBegFlC20BegIwUGlUY14yATFXZlVkXGZbalI2WjsAaFcwCG4AZVNjUzQHZVBlXzIHNws+VWFXalRgVGNXZQxkAWwBZgtlAW0CLVBvVCleZAElVyVVIFxlWyhSO1ppAGBXMghqAGJTNlNlB2VQZF8mB3ELZVU+V25UM1RpVzEMZgFjAWcLZAFjAjBQO1RpXjMBLVd+VXVcZls2UiVaMABtVyUIKwAmU3BTbwdsUGJfNgc1CzVVZVc6VGRUZVc4DHcBIAE+Cy0BaAIyUDtUYF4vATJXZ1VrXC5ba1JhWj8Ac1cyCGkAeFMhUzYHMlAiX24HWgtvVThXNlRlVHpXJgwlASwBJws4AQoCdlBrVGxeMQ==",
+  "downloadUrl": "https://erduocc.lanzoue.com/iNPce38wtn1c",
   "changelog": [
     "🎉 新增应用自动更新功能（启动时自动检查）",
     "✅ 集成 AI 图像放大功能（Upscayl）",
@@ -10,6 +10,7 @@
     "✅ 视频生成提示词持久化"
   ]
 }
+
 
 
 
