@@ -1,11 +1,13 @@
-   {
-     "version": "2.42.2",
-     "releaseDate": "2025-10-20",
-     "downloadUrl": "https://您的下载链接.com/漫想+v2.42.2.zip",
-     "changelog": [
-       "修复任务队列 Bug",
-       "修复 Sora-2 并发问题",
-       "修复视频播放问题"
-     ],
-     "minVersion": "2.40.0"
-   }
+{
+  "version": "v1.0.0",
+  "releaseDate": "2025-10-20",
+  "downloadUrl": "https://erduocc.lanzoue.com/iZFfU38wroza",
+  "changelog": [
+    "🎉 新增应用自动更新功能（启动时自动检查）",
+    "✅ 集成 AI 图像放大功能（Upscayl）",
+    "✅ 修复任务队列 Bug（失败/取消后继续执行）",
+    "✅ 修复 Sora-2 双并发问题",
+    "✅ 视频生成提示词持久化"
+  ]
+}
+
