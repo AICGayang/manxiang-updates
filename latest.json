@@ -1,15 +1,16 @@
 {
-  "version": "v1.0.2",
-  "releaseDate": "2025-10-22",
-  "downloadUrl": "https://erduocc.lanzoue.com/iZ2k43934poj",
+  "version": "v1.0.3",
+  "releaseDate": "2025-10-23",
+  "downloadUrl": "https://erduocc.lanzoue.com/i9AnG394vdxe",
   "changelog": [
     "🎉 由于个别原因，今天（10.22号）key的消耗增大，今天使用nano模型的用户联系我补key",
-    "✅ 原有的功能全部修复，价格调整，香蕉模型4分8一张需要换key",
-    "✅ 修复任务队列 Bug（失败/取消后继续执行）",
-    "✅ 修复 Sora-2 双并发问题",
-    "✅ 联系作者"
+    "✅ 功能已经全部修复，新版香蕉会有一定的空回，尺寸不是百分百控制",
+    "✅ 大多是使用时间端的问题，关于稳定性后面会逐渐提高",
+    "✅ 有任何问题或者bug提交",
+    "✅ 欢迎联系作者"
   ]
 }
+
 
 
 
