@@ -1,12 +1,17 @@
 {
   "version": "3.0.0",
-  "notes": "Release v3.0.0\r\n\r\nPublished at: 2026-04-29\r\nSource commit: 38905e949d2c938d30c478e85b91dffd129a22ba\r\n",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：vX.Y.Z\n发布日期：YYYY-MM-DD\n\n本次更新：\n\n1. 新增：\n- 在这里写本次新增的功能\n- 如果有第二条新增，继续写\n\n2. 优化：\n- 在这里写本次体验优化或流程优化\n- 如果有第二条优化，继续写\n\n3. 修复：\n- 在这里写本次修复的问题\n- 如果有第二条修复，继续写\n\n4. 说明：\n- 如果这次有兼容性提醒、已知限制、升级注意事项，写在这里\n- 如果没有，可以删除这一段",
   "published_at": "2026-04-29",
   "platforms": {
     "windows-x86_64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.0/%E6%BC%AB%E6%83%B3%2B%20%E7%94%BB%E5%B8%83UI_3.0.0_x64-setup.exe",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.0/%E6%BC%AB%E6%83%B3%2B%20%E7%94%BB%E5%B8%83UI_3.0.0_x64-setup.exe",
-      "sha256": "05A937247C1797F5E9E1E47834B52EFD19B282EC9F283370B5F4EC068773CCEE"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.0/漫想+ 画布UI_3.0.0_x64-setup.exe",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.0/漫想+ 画布UI_3.0.0_x64-setup.exe",
+      "sha256": "F4BB2A47065BFD641F52D1EBAAD917BF3C4F2008F6735692BC54E37D672B2C34"
+    },
+    "darwin-x86_64": {
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.0/漫想+ 画布UI_3.0.0_x64.dmg",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.0/漫想+ 画布UI_3.0.0_x64.dmg",
+      "sha256": "C55EE62C152FCE058CB16D49560300C5EDAC0A68842ADE55E1F2E1B50DDC4966"
     }
   }
 }
