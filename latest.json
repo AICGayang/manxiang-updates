@@ -6,17 +6,17 @@
     "windows-x86_64": {
       "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.0/漫想+ 画布UI_3.0.0_x64-setup.exe",
       "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.0/漫想+ 画布UI_3.0.0_x64-setup.exe",
-      "sha256": "348244DB9E6105B6E0D447FE4F217AB169A6B39FDEC64A510272C33C9F802340"
+      "sha256": "7A93A609C7C233FA8C62AF3133F96F89DC88D9C0ABE2808F3D355FC525C6F1F5"
     },
     "darwin-x86_64": {
       "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.0/manxiang-canvas-ui_3.0.0_darwin-x86_64.dmg",
       "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.0/manxiang-canvas-ui_3.0.0_darwin-x86_64.dmg",
-      "sha256": "D22D5C31682BCEC6B67ED3002687F973BAB3FFE3D176CAAC1FC2273AA0DDBDB6"
+      "sha256": "4206B61F5D6DFC228E1716B1FB76ECEF8E06C5453F170C2A1F9D313E6C0614B0"
     },
     "darwin-aarch64": {
       "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.0/manxiang-canvas-ui_3.0.0_darwin-aarch64.dmg",
       "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.0/manxiang-canvas-ui_3.0.0_darwin-aarch64.dmg",
-      "sha256": "7434A700C1B46B0E9FCF24391DDC8673623B839F2B38F5D55BF3852EBE576112"
+      "sha256": "CC91764E919F1836F4BF33D3675B7D869C6EADC12B1DD72993D5C4C5554D2DFC"
     }
   }
 }
