@@ -1,22 +1,22 @@
 {
   "version": "3.0.1",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.0.1\n发布日期：2026-04-29\n\n本次更新：\n\n1. 优化：\n- 优化桌面代理层报错提示，超时、连接失败、证书握手失败等错误会显示为更易理解的中文说明\n- 优化代理错误的脱敏处理，用户可见报错不再暴露真实上游接口地址\n- 优化设置页全局线路配置读取逻辑，自动纠正旧版遗留的异常线路值\n\n2. 修复：\n- 修复 macOS 打包版本在部分旧配置场景下，设置页显示为预设线路但实际验证请求走了旧地址的问题\n- 修复 API Key 验证时因旧线路残留导致返回 HTML 页面、从而提示 JSON 验证失败的问题\n- 修复代理请求失败时把真实接口 URL 直接透传给用户的问题\n\n3. 说明：\n- 本次版本重点处理 macOS 验证链路和桌面代理报错可见性问题\n- 重新打包并安装 3.0.1 后，如本地存在旧线路配置，程序会自动切回当前预设线路",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.0.1\n发布日期：2026-04-29\n\n本次更新：\n\n1. 优化：\n- 优化桌面代理层报错提示，超时、连接失败、证书握手失败等错误会显示为更易理解的中文说明\n- 优化代理错误的脱敏处理，用户可见报错不再暴露真实上游接口地址\n- 优化设置页全局线路配置读取逻辑，自动纠正旧版遗留的异常线路值\n- 优化“检查更新”弹窗的更新说明显示区域，长内容改为固定高度内部滚动，不再把底部操作按钮挤出可视区\n- 优化“检查更新”入口体验，设置页会静默感知新版本，并在按钮右上角显示更新标识\n\n2. 修复：\n- 修复 macOS 打包版本在部分旧配置场景下，设置页显示为预设线路但实际验证请求走了旧地址的问题\n- 修复 API Key 验证时因旧线路残留导致返回 HTML 页面、从而提示 JSON 验证失败的问题\n- 修复代理请求失败时把真实接口 URL 直接透传给用户的问题\n- 修复 Grok 视频模型仍沿用旧请求字段的问题，现已切换为 `seconds + size + images` 请求模式\n- 修复 Grok 视频模型前端参数与后端请求不一致的问题，并限制参考图最多上传 5 张\n\n3. 说明：\n- 本次版本重点处理 macOS 验证链路和桌面代理报错可见性问题\n- 重新打包并安装 3.0.1 后，如本地存在旧线路配置，程序会自动切回当前预设线路\n- Grok 视频模型现在直接暴露时长和尺寸参数，支持 `6s / 10s / 12s / 20s` 与 `1280x720 / 720x1280 / 1024x1024 / 1024x1792 / 1792x1024`",
   "published_at": "2026-04-29",
   "platforms": {
     "windows-x86_64": {
       "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.1/漫想+ 画布UI_3.0.1_x64-setup.exe",
       "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.1/漫想+ 画布UI_3.0.1_x64-setup.exe",
-      "sha256": "664132B88778E165FE9C67C46220F6ED6CD1A02141A1324968E37A69F1D59113"
+      "sha256": "0189FCEE2689EEF3FC1205E70F3949E3058B2616322128F7F54E895D845220BF"
     },
     "darwin-x86_64": {
       "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.1/manxiang-canvas-ui_3.0.1_darwin-x86_64.dmg",
       "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.1/manxiang-canvas-ui_3.0.1_darwin-x86_64.dmg",
-      "sha256": "3E7CF472F42978D4EFBD0E8A4CAFC15952BF7CF9376C1431CE3171619831CED9"
+      "sha256": "AFB72FD5BC833FCE7E4FB2A889316611CEC13E74550990027C3F5E5C8CEAABC1"
     },
     "darwin-aarch64": {
       "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.1/manxiang-canvas-ui_3.0.1_darwin-aarch64.dmg",
       "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.1/manxiang-canvas-ui_3.0.1_darwin-aarch64.dmg",
-      "sha256": "8E5712A379D000C256D920AB2BAD3172445DC2D81577784F5B5B61154D5AEA37"
+      "sha256": "21DA7012DB144A01710CF7F7048BC6B63494E1D6C26024ADEBB56B71B7E85376"
     }
   }
 }
