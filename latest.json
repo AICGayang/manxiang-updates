@@ -6,12 +6,12 @@
     "windows-x86_64": {
       "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.0/漫想+ 画布UI_3.0.0_x64-setup.exe",
       "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.0/漫想+ 画布UI_3.0.0_x64-setup.exe",
-      "sha256": "F4BB2A47065BFD641F52D1EBAAD917BF3C4F2008F6735692BC54E37D672B2C34"
+      "sha256": "7A6C41623077D682DC383FCD354B3AD89E4F83E4E3BD11A6E15B0F1331A9EA63"
     },
     "darwin-x86_64": {
       "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.0/漫想+ 画布UI_3.0.0_x64.dmg",
       "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.0/漫想+ 画布UI_3.0.0_x64.dmg",
-      "sha256": "C55EE62C152FCE058CB16D49560300C5EDAC0A68842ADE55E1F2E1B50DDC4966"
+      "sha256": "7E34EE6906C93DEB015A5DEF31D0F5A3A62DF1402186211066EC657A34DB46CD"
     }
   }
 }
