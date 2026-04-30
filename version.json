@@ -1,22 +1,22 @@
 {
   "version": "3.0.2",
   "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.0.2\n发布日期：2026-04-29\n\n本次更新：\n\n1. 新增：\n- 新增 `Grok 视频续写` 节点，支持上传 1 个参考视频后继续生成后续内容\n- 视频生成节点现在会显示任务 ID，方便你和用户按任务号排查后台进度与失败原因\n\n2. 优化：\n- 优化 Grok 图生视频模型显示名，前端统一改为 `Grok-video`\n- 优化 Grok-video 参数面板，改成和其他视频模型一致的比例选择方式，用户不再需要理解具体像素尺寸\n- 优化视频结果下载链路，对异常返回内容做更严格校验，减少“看起来成功但实际没拿到视频”的情况\n\n3. 修复：\n- 修复部分 Grok 视频结果链接格式异常时，前端未正确识别真实视频地址的问题\n- 修复 Grok-video 前端参数与后端请求映射不一致的问题，前端比例会自动映射为后端需要的 `size`\n- 修复生成失败或生成中界面里任务 ID 不便于继续排查的问题\n\n4. 说明：\n- 本次版本重点在视频链路，尤其是 Grok 系列模型体验\n- Grok-video 仍然最多支持 5 张参考图\n- Grok 视频续写节点当前只支持 1 个参考视频，且参考视频建议控制在 20 秒内",
-  "published_at": "2026-04-29",
+  "published_at": "2026-04-30",
   "platforms": {
     "windows-x86_64": {
       "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.2/漫想+ 画布UI_3.0.2_x64-setup.exe",
       "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.2/漫想+ 画布UI_3.0.2_x64-setup.exe",
-      "sha256": "7DE3AD80DB858A1DC07D7E9A137F14D6F6C69B784428C92A6020D0EFA1D6D3F7"
+      "sha256": "6CB7238EF0B73E982E9C5AC62B005C182F3D1A62D60036833869FF5CBACFFD64"
     },
     "darwin-x86_64": {
       "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.2/manxiang-canvas-ui_3.0.2_darwin-x86_64.dmg",
       "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.2/manxiang-canvas-ui_3.0.2_darwin-x86_64.dmg",
-      "sha256": "2966072FB09AABCAD1C872C3A109A53CFD05CBCBF79B68534FB82C5D6B16FF39"
+      "sha256": "DE04BE4FD2F795993AB52210BB7F637D7E9612E9118109EB9C334D2B1C3D0A28"
     },
     "darwin-aarch64": {
       "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.2/manxiang-canvas-ui_3.0.2_darwin-aarch64.dmg",
       "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.2/manxiang-canvas-ui_3.0.2_darwin-aarch64.dmg",
-      "sha256": "6418FF053E342F2C50D65C8DA478BC8D42382CC4BF73F73465B0E79359230A65"
+      "sha256": "585B13933AAE512C1B80511C3BE2C9C7DEDC7D1E55D20CB8A823DB168CCE376F"
     }
   }
 }
