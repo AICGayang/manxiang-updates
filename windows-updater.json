@@ -1,11 +1,11 @@
 {
-  "version": "3.0.2",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.0.2\n发布日期：2026-04-29\n\n本次更新：\n\n1. 新增：\n- 新增 `Grok 视频续写` 节点，支持上传 1 个参考视频后继续生成后续内容\n- 视频生成节点现在会显示任务 ID，方便你和用户按任务号排查后台进度与失败原因\n\n2. 优化：\n- 优化 Grok 图生视频模型显示名，前端统一改为 `Grok-video`\n- 优化 Grok-video 参数面板，改成和其他视频模型一致的比例选择方式，用户不再需要理解具体像素尺寸\n- 优化视频结果下载链路，对异常返回内容做更严格校验，减少“看起来成功但实际没拿到视频”的情况\n\n3. 修复：\n- 修复部分 Grok 视频结果链接格式异常时，前端未正确识别真实视频地址的问题\n- 修复 Grok-video 前端参数与后端请求映射不一致的问题，前端比例会自动映射为后端需要的 `size`\n- 修复生成失败或生成中界面里任务 ID 不便于继续排查的问题\n\n4. 说明：\n- 本次版本重点在视频链路，尤其是 Grok 系列模型体验\n- Grok-video 仍然最多支持 5 张参考图\n- Grok 视频续写节点当前只支持 1 个参考视频，且参考视频建议控制在 20 秒内",
-  "pub_date": "2026-04-30T00:00:00Z",
+  "version": "3.0.3",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.0.3\n发布日期：2026-05-03\n\n本次更新：\n\n1. 新增文本节点\n- 支持在画布中直接承载和整理文本内容\n- 适合用作剧情、设定、提示词和创作备注的中间节点\n\n2. 余额查询新增购买与兑换功能\n- 新增购买入口，可直接跳转到购买页面\n- 新增兑换码输入与兑换能力，可在软件内直接完成兑换\n\n3. 新增脚本节点\n- 可将文本和参考素材整理成结构化脚本内容\n- 适合用于批量制作分镜首图，提高前期分镜图生产效率",
+  "pub_date": "2026-05-03T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK2s5ZEFSWDFYMkZoYWR3VGRTeE95bGZ3amZuNkdOZ0R0bUlzQ1VqN1hKbmVCOFZLYnBTeGhwZlBoK2p2aGV3aE1wYVpkUURCS1drRjZYQis2ZlM3MVF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc3NTMzMzE2CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjAuMl94NjQtc2V0dXAuZXhlCkloRC9IT3ZVdHB1SXg4T0pCT0RIcXhSdkJBc2hTTFAwRTZTcGFrbFV2ejd4dmxYd0NSOXFsRlB1Q0lCNDQwTFRLdC9mUXhVVm9MSUZKRGNUNGwxL0JBPT0K",
-      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.2/manxiang-canvas-ui_3.0.2_windows-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK3QrbkJmdUxFZnpxUlVadkR3Z09GOG9BSWRYVm51NzdHcGFmQXdWKy9qMnBTZ2gzc2l2ekpKb0RNejdFMFlZTjZkeWhFUmVPV00rM0c0OHRHbGVqdWdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc3Nzk0OTI2CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjAuM194NjQtc2V0dXAuZXhlCkd0UEtEWm9ZTXpsTkxiT2hEN2U4VU1zN2JmcGdLYzlpeFZtQTcwQ0Y3M3RBSWVKR1lpamtyUzVqSFphQVJycHVNWEVrMCtJa0hRdFlzZlhnNjNTQUFRPT0K",
+      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.3/manxiang-canvas-ui_3.0.3_windows-x64-setup.exe"
     }
   }
 }
