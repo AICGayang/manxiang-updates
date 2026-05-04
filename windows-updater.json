@@ -1,11 +1,11 @@
 {
-  "version": "3.0.3",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.0.3\n发布日期：2026-05-03\n\n本次更新：\n\n1. 新增文本节点\n- 支持在画布中直接承载和整理文本内容\n- 适合用作剧情、设定、提示词和创作备注的中间节点\n\n2. 余额查询新增购买与兑换功能\n- 新增购买入口，可直接跳转到购买页面\n- 新增兑换码输入与兑换能力，可在软件内直接完成兑换\n\n3. 新增脚本节点\n- 可将文本和参考素材整理成结构化脚本内容\n- 适合用于批量制作分镜首图，提高前期分镜图生产效率",
-  "pub_date": "2026-05-03T00:00:00Z",
+  "version": "3.0.4",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.0.4\n发布日期：2026-05-04\n\n本次更新：\n\n1. 优化 3D 分镜节点\n- 优化人偶与物品模型的摆放、选中、显隐和锁定交互\n- 支持摄像机视图导出到画布，方便制作分镜参考图\n\n2. 优化画布节点连接体验\n- 支持选中多个节点后从选区连接点拖拽建立数据连接\n- 连接点在缩放视图下保持稳定大小和相对位置\n\n3. 修复更新后的项目创建问题\n- 修复用户更新后新建项目可能卡在加载界面的问题\n- 修复存储目录中异常生成多个项目副本文件夹的问题\n\n4. 封装前稳定性整理\n- 优化节点按钮、预览画面和部分输入交互\n- 清理临时参考项目文件，减少无关源码内容",
+  "pub_date": "2026-05-04T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK3QrbkJmdUxFZnpxUlVadkR3Z09GOG9BSWRYVm51NzdHcGFmQXdWKy9qMnBTZ2gzc2l2ekpKb0RNejdFMFlZTjZkeWhFUmVPV00rM0c0OHRHbGVqdWdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc3Nzk0OTI2CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjAuM194NjQtc2V0dXAuZXhlCkd0UEtEWm9ZTXpsTkxiT2hEN2U4VU1zN2JmcGdLYzlpeFZtQTcwQ0Y3M3RBSWVKR1lpamtyUzVqSFphQVJycHVNWEVrMCtJa0hRdFlzZlhnNjNTQUFRPT0K",
-      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.3/manxiang-canvas-ui_3.0.3_windows-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK2szM2JMTlBiVHp2L0lhR2ZPWkxWNFpLUDEvMnlabkZhYXdIdFVBdW1SQjk3cDJXVFQ0WmVSZlVVSEwrNnRGaXdXV2lJdiswaHF2N1ZMS3ZVOFFLc0FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc3ODk3MzgzCWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjAuNF94NjQtc2V0dXAuZXhlCklBd044aStIaWR0VHdpcy9xYnF1NnRUcEw1Y2V0ekpUcks4a3JuTjc3VUlvTU1CeElkaFUvUUh6UHdDd2lMVkRtbHFQUXdhK1BpTGhNeUozSjZZYkNBPT0K",
+      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.4/manxiang-canvas-ui_3.0.4_windows-x64-setup.exe"
     }
   }
 }

@@ -1,22 +1,22 @@
 {
-  "version": "3.0.3",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.0.3\n发布日期：2026-05-03\n\n本次更新：\n\n1. 新增文本节点\n- 支持在画布中直接承载和整理文本内容\n- 适合用作剧情、设定、提示词和创作备注的中间节点\n\n2. 余额查询新增购买与兑换功能\n- 新增购买入口，可直接跳转到购买页面\n- 新增兑换码输入与兑换能力，可在软件内直接完成兑换\n\n3. 新增脚本节点\n- 可将文本和参考素材整理成结构化脚本内容\n- 适合用于批量制作分镜首图，提高前期分镜图生产效率",
-  "published_at": "2026-05-03",
+  "version": "3.0.4",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.0.4\n发布日期：2026-05-04\n\n本次更新：\n\n1. 优化 3D 分镜节点\n- 优化人偶与物品模型的摆放、选中、显隐和锁定交互\n- 支持摄像机视图导出到画布，方便制作分镜参考图\n\n2. 优化画布节点连接体验\n- 支持选中多个节点后从选区连接点拖拽建立数据连接\n- 连接点在缩放视图下保持稳定大小和相对位置\n\n3. 修复更新后的项目创建问题\n- 修复用户更新后新建项目可能卡在加载界面的问题\n- 修复存储目录中异常生成多个项目副本文件夹的问题\n\n4. 封装前稳定性整理\n- 优化节点按钮、预览画面和部分输入交互\n- 清理临时参考项目文件，减少无关源码内容",
+  "published_at": "2026-05-04",
   "platforms": {
     "windows-x86_64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.3/manxiang-canvas-ui_3.0.3_windows-x64-setup.exe",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.3/manxiang-canvas-ui_3.0.3_windows-x64-setup.exe",
-      "sha256": "D270171FB4A7366B24291E1065924CA88DA5121AD7E4139057F716680B8E8400"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.4/manxiang-canvas-ui_3.0.4_windows-x64-setup.exe",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.4/manxiang-canvas-ui_3.0.4_windows-x64-setup.exe",
+      "sha256": "909DE10A5ABA50D36105B61DCC0C259F1A2CBB07603A909A638897988535FBD8"
     },
     "darwin-x86_64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.3/manxiang-canvas-ui_3.0.3_darwin-x86_64.dmg",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.3/manxiang-canvas-ui_3.0.3_darwin-x86_64.dmg",
-      "sha256": "DBB739C13131FBF9DB47910B2D8289508CA10A0646B38C74A264D25B6E7A7F55"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.4/manxiang-canvas-ui_3.0.4_darwin-x86_64.dmg",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.4/manxiang-canvas-ui_3.0.4_darwin-x86_64.dmg",
+      "sha256": "0BB7DE2E582771E02559EE5E4E59DC436491340BCE4D040148655CA475982FAC"
     },
     "darwin-aarch64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.3/manxiang-canvas-ui_3.0.3_darwin-aarch64.dmg",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.3/manxiang-canvas-ui_3.0.3_darwin-aarch64.dmg",
-      "sha256": "5C2C3C9B9F92100E65D9D1953FEDB74457F8067779E3D4C5CF149BC23F6CA5ED"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.4/manxiang-canvas-ui_3.0.4_darwin-aarch64.dmg",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.4/manxiang-canvas-ui_3.0.4_darwin-aarch64.dmg",
+      "sha256": "74FFAB305471191E7A10F84B3B0FF3F2D0F62FA71B7386B2C2EE23056FB6667C"
     }
   }
 }
