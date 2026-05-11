@@ -1,10 +1,10 @@
 {
   "version": "3.0.5",
   "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.0.5\n发布日期：2026-05-10\n\n本次更新：\n\n1. 新增智能节点 Agent 能力\n- 支持自然语言理解创作需求，并按缺失信息进行追问、补全和执行\n- 支持单张生图、参考图生图、批量生图、全景图、材质增强、故事版和剧本分镜链路\n- 支持自动创建节点、连接节点，并避免多节点创建时互相覆盖\n\n2. 优化批量与全景生成\n- 批量生图可自动生成多条任务提示词并写入批量节点\n- 全景图默认使用 gpt-image-2 满血版、4K、高质量参数\n- 增强全景接缝提示词，并自动连接全景查看节点\n\n3. 优化脚本节点和分镜批量生成\n- 脚本节点支持根据文本、角色图、场景图等参考素材生成结构化分镜脚本\n- 智能节点可自动创建脚本节点、连接参考素材，并触发剧本分镜分析\n- 分镜批量出图时会按每个镜头实际需要筛选参考图，并重新生成局部图号关系，避免无关参考图干扰\n- 支持在脚本节点中检查结构化分镜后，一键批量生成对应分镜图\n\n4. 新增桌面宠物系统\n- 支持从工具栏唤醒和隐藏桌面宠物\n- 支持任务状态动画、任务气泡、下载进度、完成音效和失败音效\n- 支持宠物音效开关、音量调节和自定义替换音效\n\n5. 优化节点和资源体验\n- 媒体类节点支持右键找到本地文件\n- 优化 3D 分镜节点空白区域取消选中和视角拖拽体验\n- 优化节点提示词显示策略，内置执行提示词不再暴露到节点和历史记录\n\n6. 封装前稳定性整理\n- 修复项目创建和保存链路异常导致卡住或重复创建副本文件夹的问题\n- 优化安装包图标，使用项目 logo\n- 修复多处智能节点执行、参数优先级和 UI 显示问题",
-  "pub_date": "2026-05-10T00:00:00Z",
+  "pub_date": "2026-05-11T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK2lPWkpLUTNWd1dQUStBV081U2FXVWNicVlmSExUYmE1dFFaeFUyZFptcXRHQ1FzME5XR3Z2WnNSd1dlc2NRU2lFc28vMDNvcm0ycURNaHlhcW1PdHdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NDAzMTE4CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjAuNV94NjQtc2V0dXAuZXhlCkJnaS9mVjMvQjBMQnhtbFg3TExPWkxvVjFnQUM4cXRNcXM3cTUxYWNuQXhsQmhGTldURlhadll2ZHZkWTdWVG5obXpYemhDMjN5bW5YWHo4UVRjY0RBPT0K",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK3VFc3F3ZXMySElacUtDSHpqTEZ3UVNPZlBUSHExam1lN1RFM3A0cWlhNk9kQnUwaXB4dXpvd2Z2RVdGb2dEMUZIUTZwckpSbWYySE0wbHp3VHh6eXdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NDkwMTk2CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjAuNV94NjQtc2V0dXAuZXhlCmpyc1RabEYrd25TemY4RW80NU1SeHhGQWdSVGhRK1ZWTUI0cHQzSW83SWRaV2VIM25oZ0k2SGFKc0JzNHNRM1gyRkc0aFlvSnRRODgxS3lTL1h6UkF3PT0K",
       "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.5/manxiang-canvas-ui_3.0.5_windows-x64-setup.exe"
     }
   }
