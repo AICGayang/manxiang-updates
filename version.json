@@ -1,22 +1,22 @@
 {
-  "version": "3.0.5",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.0.5\n发布日期：2026-05-10\n\n本次更新：\n\n1. 新增智能节点 Agent 能力\n- 支持自然语言理解创作需求，并按缺失信息进行追问、补全和执行\n- 支持单张生图、参考图生图、批量生图、全景图、材质增强、故事版和剧本分镜链路\n- 支持自动创建节点、连接节点，并避免多节点创建时互相覆盖\n\n2. 优化批量与全景生成\n- 批量生图可自动生成多条任务提示词并写入批量节点\n- 全景图默认使用 gpt-image-2 满血版、4K、高质量参数\n- 增强全景接缝提示词，并自动连接全景查看节点\n\n3. 优化脚本节点和分镜批量生成\n- 脚本节点支持根据文本、角色图、场景图等参考素材生成结构化分镜脚本\n- 智能节点可自动创建脚本节点、连接参考素材，并触发剧本分镜分析\n- 分镜批量出图时会按每个镜头实际需要筛选参考图，并重新生成局部图号关系，避免无关参考图干扰\n- 支持在脚本节点中检查结构化分镜后，一键批量生成对应分镜图\n\n4. 新增桌面宠物系统\n- 支持从工具栏唤醒和隐藏桌面宠物\n- 支持任务状态动画、任务气泡、下载进度、完成音效和失败音效\n- 支持宠物音效开关、音量调节和自定义替换音效\n\n5. 优化节点和资源体验\n- 媒体类节点支持右键找到本地文件\n- 优化 3D 分镜节点空白区域取消选中和视角拖拽体验\n- 优化节点提示词显示策略，内置执行提示词不再暴露到节点和历史记录\n\n6. 封装前稳定性整理\n- 修复项目创建和保存链路异常导致卡住或重复创建副本文件夹的问题\n- 优化安装包图标，使用项目 logo\n- 修复多处智能节点执行、参数优先级和 UI 显示问题",
-  "published_at": "2026-05-12",
+  "version": "3.0.6",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.0.6\n发布日期：2026-05-14\n\n本次更新：\n\n1. 新增消费记录查询\n- 左侧工具栏新增“消费记录”入口，可通过当前线路和 API Key 查看调用明细\n- 支持显示时间、类型、前端模型名、用时、额度花费和完整详情\n\n2. 优化余额与兑换体验\n- 兑换成功提示只在当前余额窗口显示，关闭后不再长期保留\n- 移除项目保存诊断日志，后端窗口保留给接口请求和响应查看\n\n3. 修复项目与桌面端稳定性\n- 修复有资产项目中新建第二个项目时可能卡住的问题\n- 修复多项目素材保存路径错误导致资产写入异常的问题\n- 优化 macOS 桌面宠物窗口启动与显示，避免启动阶段崩溃\n\n4. 新增与优化视频模型\n- 生视频节点新增“便宜dance2.0”模型\n- 该模型支持参考图、参考视频、参考音频参数\n\n5. 优化脚本节点批量生成\n- 脚本节点分镜批量生图请求间隔调整为 5 秒，降低批量请求时线路压力\n- 脚本节点与智能节点脚本链路的参考图上限同步调整为 6 张\n\n6. 修复桌面宠物关闭行为\n- 修复桌面宠物在主软件关闭后仍留在桌面的问题\n- 现在关闭软件时会同步关闭宠物窗口，下次启动仍需手动唤醒",
+  "published_at": "2026-05-14",
   "platforms": {
     "windows-x86_64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.5/manxiang-canvas-ui_3.0.5_windows-x64-setup.exe",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.5/manxiang-canvas-ui_3.0.5_windows-x64-setup.exe",
-      "sha256": "E3408A1A181F24D897E77A732FCF3D07A1307D3ED4EE86AEC9C843E2110269F2"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.6/manxiang-canvas-ui_3.0.6_windows-x64-setup.exe",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.6/manxiang-canvas-ui_3.0.6_windows-x64-setup.exe",
+      "sha256": "564E9401AF59E41CD0EDEE37B09A07CE811968DD1C0936B6BE7A3BE33348DD35"
     },
     "darwin-x86_64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.5/manxiang-canvas-ui_3.0.5_darwin-x86_64.dmg",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.5/manxiang-canvas-ui_3.0.5_darwin-x86_64.dmg",
-      "sha256": "F2C322254A4BE6CFEB4577A13DEC9892D0CE09AB637FD53048BF6EB745F78C0B"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.6/manxiang-canvas-ui_3.0.6_darwin-x86_64.dmg",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.6/manxiang-canvas-ui_3.0.6_darwin-x86_64.dmg",
+      "sha256": "D147F8ED51BAC4DD132522F5541F6D04FCB0DE781CB64FE8BFBCCFB4A6F59C91"
     },
     "darwin-aarch64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.5/manxiang-canvas-ui_3.0.5_darwin-aarch64.dmg",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.5/manxiang-canvas-ui_3.0.5_darwin-aarch64.dmg",
-      "sha256": "C6D577687684C04AA4BF14AE3FA43F9E3EBA2BCC9CFB6FBC73AFBE1993F5DDF9"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.6/manxiang-canvas-ui_3.0.6_darwin-aarch64.dmg",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.6/manxiang-canvas-ui_3.0.6_darwin-aarch64.dmg",
+      "sha256": "4452C36CEC61032765DD5AC6912E32979F40D94E240FC7F00D926AAE226E0220"
     }
   }
 }
