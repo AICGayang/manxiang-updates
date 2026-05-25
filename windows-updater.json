@@ -1,11 +1,11 @@
 {
-  "version": "3.0.7",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.0.7\n发布日期：2026-05-21\n\n本次更新：\n\n1. 生视频 @ 参考素材体验优化\n- 生视频节点支持在提示词中输入 `@` 直接选择图片、视频和音频参考素材\n- 已选素材支持悬浮预览，减少来回点选素材的操作成本\n- 优化 `@` 标签在提示词输入框里的文字、图标和行高对齐\n\n2. 生成历史按项目隔离\n- 每个项目只显示自己的生成历史\n- 删除项目时同步清理该项目对应的历史缓存\n- 缩略图预热缓存加入项目维度，避免不同项目之间串记录\n\n3. 智能节点与脚本节点链路修复\n- 修复智能节点创建脚本节点时，连接的文本节点内容没有完整传入的问题\n- 脚本节点会合并连接文本与节点内补充要求，生成分镜时上下文更完整\n\n4. 消费记录展示优化\n- 消费记录类型 `6` 显示为“退款”\n- 退款记录使用蓝色标记，与消费和错误记录区分\n\n5. 3D 分镜编辑器体验修复\n- 修复取消选中、摄像机移动范围和俯视图拖动限制问题\n- 将默认人物姿势调整为更自然的站立姿态\n- 修复节点上显示的 3D 预览画面偏移问题\n\n6. 画布撤销能力\n- 新增 `Ctrl+Z` 撤销，支持回退新增/删除节点、粘贴复制、连线增删、文本编辑和参数编辑\n- 拖拽节点、拖拽画布、缩放、节点尺寸变化、生成进度和输出结果不会进入撤销栈\n- 项目切换时自动清空撤销栈，避免跨项目误回退",
-  "pub_date": "2026-05-22T00:00:00Z",
+  "version": "3.0.8",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.0.8\n发布日期：2026-05-25\n\n本次更新：\n\n1. 新增项目栏\n- 左侧新增项目栏，方便在软件内查看、切换和管理当前项目相关入口。\n- 项目资产、共享素材和常用管理操作更集中，不需要在多个地方来回找。\n\n2. 新增通用资产\n- 新增通用资产面板，用于集中保存可跨项目复用的图片、视频等素材。\n- 常用参考图、角色图、场景图、道具图可以放入通用资产，后续项目可继续复用。\n- 适合管理长期使用的角色设定、品牌素材、风格参考和常用测试素材。\n\n3. 新增 AI 助手\n- 新增 AI 助手节点，可在画布里用自然语言描述任务，让助手整理需求并执行。\n- 当前 AI 助手已接入技能协议，可调用生图、生视频、脚本预览等能力。\n- 使用方式：打开或添加 AI 助手，输入要做的任务；如果需要参考图，先选中画布素材或添加参考图，再让助手分析执行。\n- 快捷发送：在 AI 助手输入框中按 `Ctrl / Cmd + Enter` 可快速提交任务。\n- 适合的任务示例：根据参考图生成新图、整理分镜生图需求、把文字需求拆成可执行的生图/视频步骤。\n\n4. 漫想+ MCP 桥接能力\n- 新增本地 MCP 桥接通道，可通过客户端在当前画布创建项目和生图节点。\n- 支持传入模型、画面比例、分辨率、质量等参数，并自动运行生图任务。\n- 抽离独立 `mxplus-canvas-mcp` 插件包，补充中文说明与项目 Logo。\n\n5. 生图参数规格化\n- 修复 `gpt-image-2 满血版`、4K、16:9、高质量等参数在 MCP 与本地桥接间的映射。\n- 避免客户端传参和软件内部请求体不一致导致模型、尺寸或质量档位错误。\n\n6. 结果堆叠交互修复\n- 修复节点进入编辑模式后，右下角结果堆叠按钮无法点击的问题。\n- 用户在结果堆叠中选择哪张图，后续下游节点就使用哪张图。\n- 复制图片时同步复制当前显示/选中的图片。",
+  "pub_date": "2026-05-25T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK3ZMSklLcEJiT2ZpV0RaZHV3R0FxNXBBMFF0dEtpcFdlVE5xWlhSdThkSTBROWxtSVczWUUyUTBlNG5xTFNjWFRhTEVjbUxRTm1OTDMzdlVrSmdnZGdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NDM0NTU5CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjAuN194NjQtc2V0dXAuZXhlCndSa2NGK1F4ZzQ2RHZyWUxQUlNPeDdOWitzU05QdWtocXNMUjdOcFh1dnJFcjM4VUVORHVScmdoczdvcGMrNDA1TXB1QXE3OU5qbUljN0RlQ1NyZ0RnPT0K",
-      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.7/manxiang-canvas-ui_3.0.7_windows-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK2xqdmJUWjVHaThTYjQzdStTSU9YOWxQNmtVbHRkMnh2NzFKaThVZEd6ZlZ6by9TQytrT3ZhTGhXOVlVaktSWG54d2pJbnBVSWV2cm1ieHhlQWVTVFFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5Njg1MjM4CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjAuOF94NjQtc2V0dXAuZXhlCnhRYjd4UmZCRExrY0pxcGMxR1RTVjJ3aVlNaWl6cXVzWnkvNVY0OHd1SUR1ZmwxdW04M0E1aTVoejZEOU1LMFcvS2duTjZ1dDVkL0V0ZzFlMmNicURRPT0K",
+      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.8/manxiang-canvas-ui_3.0.8_windows-x64-setup.exe"
     }
   }
 }
