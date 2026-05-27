@@ -1,22 +1,22 @@
 {
-  "version": "3.0.8",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.0.8\n发布日期：2026-05-25\n\n本次更新：\n\n1. 新增项目栏\n- 左侧新增项目栏，方便在软件内查看、切换和管理当前项目相关入口。\n- 项目资产、共享素材和常用管理操作更集中，不需要在多个地方来回找。\n\n2. 新增通用资产\n- 新增通用资产面板，用于集中保存可跨项目复用的图片、视频等素材。\n- 常用参考图、角色图、场景图、道具图可以放入通用资产，后续项目可继续复用。\n- 适合管理长期使用的角色设定、品牌素材、风格参考和常用测试素材。\n\n3. 新增 AI 助手\n- 新增 AI 助手节点，可在画布里用自然语言描述任务，让助手整理需求并执行。\n- 当前 AI 助手已接入技能协议，可调用生图、生视频、脚本预览等能力。\n- 使用方式：打开或添加 AI 助手，输入要做的任务；如果需要参考图，先选中画布素材或添加参考图，再让助手分析执行。\n- 快捷发送：在 AI 助手输入框中按 `Ctrl / Cmd + Enter` 可快速提交任务。\n- 适合的任务示例：根据参考图生成新图、整理分镜生图需求、把文字需求拆成可执行的生图/视频步骤。\n\n4. 漫想+ MCP 桥接能力\n- 新增本地 MCP 桥接通道，可通过客户端在当前画布创建项目和生图节点。\n- 支持传入模型、画面比例、分辨率、质量等参数，并自动运行生图任务。\n- 抽离独立 `mxplus-canvas-mcp` 插件包，补充中文说明与项目 Logo。\n\n5. 生图参数规格化\n- 修复 `gpt-image-2 满血版`、4K、16:9、高质量等参数在 MCP 与本地桥接间的映射。\n- 避免客户端传参和软件内部请求体不一致导致模型、尺寸或质量档位错误。\n\n6. 结果堆叠交互修复\n- 修复节点进入编辑模式后，右下角结果堆叠按钮无法点击的问题。\n- 用户在结果堆叠中选择哪张图，后续下游节点就使用哪张图。\n- 复制图片时同步复制当前显示/选中的图片。",
-  "published_at": "2026-05-25",
+  "version": "3.0.9",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.0.9\n发布日期：2026-05-27\n\n本次更新：\n\n1. 新增视频模型O\n- 新增“视频模型O”分组，包含“文生视频”“多参考生视频”“视频编辑”三种视频能力。\n- 前端模型下拉和内部模型已统一。\n\n2. 项目包导出优化\n- 完整项目包 `.manxiang` 的桌面端导出改为 Rust 后端原生打包。\n- 大项目、多图片、多视频素材导出时，不再让前端主线程压缩全部资源，减少窗口未响应。\n- 导出会覆盖图片、视频、音频、缩略图和生成历史产物等项目资源。\n\n3. 项目包导入优化\n- 完整项目包 `.manxiang` 的桌面端导入改为 Rust 后端原生解压。\n- 大项目导入时不再依赖前端主线程解压全部素材，减少卡顿和未响应。\n- 导入后会恢复项目目录和画布资源路径，图片、视频、音频等资源可继续在画布中显示。\n\n4. 稳定性修复\n- 修复项目迁移时部分资源路径、历史产物和缩略图恢复不完整的问题。\n- 修复 AI 助手视频模型映射与前端模型显示名不一致的问题。",
+  "published_at": "2026-05-27",
   "platforms": {
     "windows-x86_64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.8/manxiang-canvas-ui_3.0.8_windows-x64-setup.exe",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.8/manxiang-canvas-ui_3.0.8_windows-x64-setup.exe",
-      "sha256": "258678BFFE1CA3DBB5828744437276CBD5825A827E3CD367958F9E4E995C36C0"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.9/manxiang-canvas-ui_3.0.9_windows-x64-setup.exe",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.9/manxiang-canvas-ui_3.0.9_windows-x64-setup.exe",
+      "sha256": "C81882ABB786141EDC52F19182623490F5E2A5E99CC8BBFD905B95DBC63B5BF8"
     },
     "darwin-x86_64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.8/manxiang-canvas-ui_3.0.8_darwin-x86_64.dmg",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.8/manxiang-canvas-ui_3.0.8_darwin-x86_64.dmg",
-      "sha256": "299CE6B039EA38EDA08F7379DA3CF1E19AC71D73C0871B57B736F7CF4D10D455"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.9/manxiang-canvas-ui_3.0.9_darwin-x86_64.dmg",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.9/manxiang-canvas-ui_3.0.9_darwin-x86_64.dmg",
+      "sha256": "07B0DA75C2817DCBFA85AD7A0DC32721AA9D64C5ACE23A1B7510E0442B35C069"
     },
     "darwin-aarch64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.8/manxiang-canvas-ui_3.0.8_darwin-aarch64.dmg",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.8/manxiang-canvas-ui_3.0.8_darwin-aarch64.dmg",
-      "sha256": "9C40092B153197386C00A6F49E080FCEE33ACE02623F2071D8AC0C6F2FFA5222"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.9/manxiang-canvas-ui_3.0.9_darwin-aarch64.dmg",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.0.9/manxiang-canvas-ui_3.0.9_darwin-aarch64.dmg",
+      "sha256": "50FD037C0914BE07B80F35BB3A4F87CBD783AEC079A6FB80BA2AED1E44594154"
     }
   }
 }
