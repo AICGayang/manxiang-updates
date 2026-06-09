@@ -1,11 +1,11 @@
 {
-  "version": "3.1.0",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.1.0\n发布日期：2026-05-29\n\n本次更新：\n\n1. 资产稳定性补充修复\n- 加载旧项目时由后端批量检查图片、视频、音频素材路径，并自动重映射仍存在的项目内资源。\n\n2. 参考素材体验\n- 参考素材选择支持图片、视频、音频分类筛选和模糊搜索。\n- 修复深色模式搜索输入不明显的问题。\n- 修复放大提示词窗口滚轮和参考素材缩略图容错，减少坏缩略图导致的控制台噪音。\n\n3. 图片异步生成\n- 图片生成接入异步任务链路，提交后按状态轮询，不再长时间阻塞等待同步返回。\n- 前端显示“任务已提交”“图片生成中”“图片下载中”三个关键状态。\n- 失败时直接展示上游返回的具体错误，方便判断线路、模型或参数问题。\n\n4. 视频参考图预处理\n- 所有视频模型调用前会自动处理参考图。\n- 参考图长边限制为 1536，并压缩为高质量 JPG，降低 4K 图片直接传视频接口导致的失败和卡顿风险。\n- 手动生成、AI 助手和 MCP 触发的视频生成都会走同一套视频调用链路。\n\n5. 提示词放大窗口\n- 所有主要生成类节点新增或完善提示词放大窗口。\n- 放大窗口默认居中显示，使用不透明毛玻璃面板，便于查看和编辑长提示词。\n- 可在放大窗口里编辑本次生成请求的提示词和参考素材。\n- 放大窗口底部参数改为可调控件，并和外部输入框保持同一套模型、比例、分辨率、质量、时长、数量、提示词优化等可选参数。\n\n6. 参考素材与音频体验\n- 视频模型S和便宜视频模型S在放大提示词窗口中支持 `@` 引用画布参考素材，和外部输入框体验一致。\n- 音频参考素材会在“音频1 / 音频2”后显示具体音频名称，便于区分用户上传的音频。\n\n7. 项目导入与稳定性\n- 优化项目导入链路中的项目配置读取和资源路径恢复。\n- 减少异常配置导致的重复项目识别、乱码路径和链接素材丢失问题。\n- 批量资产、AI导演分镜、脚本预览等生成类节点同步补齐提示词放大和参数编辑能力。",
-  "pub_date": "2026-06-01T00:00:00Z",
+  "version": "3.1.1",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.1.1\n发布日期：2026-06-09\n\n本次更新：\n\n1. 视频模型S分辨率映射\n- “视频模型S”现在支持 480P 和 720P 两个分辨率选项。\n- 前端仍统一显示为“视频模型S”，生成历史和用量展示不会暴露后端模型名。\n\n2. 生成消耗展示\n- 视频模型S生成按钮新增预估消耗展示。\n\n3. 批量生成与提示词放大窗口\n- 批量生成节点会汇总视频模型S任务的预估消耗。\n\n4. 模型配置整理\n5. 前端加载性能优化",
+  "pub_date": "2026-06-09T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK3IraW9PYlM1SXZrV2hzTHkvRlkrb3VhZWk5cG5XSVdVVnkyc2VJSEgya2p1elNqTzJFSVBlaHcyKzBxM0NYbUpQR0g5dHc4T1FVOEhMMTJiVjNiNkF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMjgwNjU0CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjEuMF94NjQtc2V0dXAuZXhlCllnQUcvQ29YaStUcys5TnlqUE1OeEI3Q1R1M3l5dmJyUVVqb08xajZ4WlprSlBFa1ZYRUU5RmVQVFNWTURONlA2Tjg2bHBaQ3gvdy8yMlpwN0VHekJnPT0K",
-      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.0/manxiang-canvas-ui_3.1.0_windows-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK3FJdnpBZG8zWW9ZUW1aQzgzY1crV2d0MXl4U1Fmc1EzaG9Td1Jjd2F1MlhhT29JMkhxeTZHN1dCeWZKaXRuWEJCUkhKWGw4aHFPWkdGUzhhWmVweVFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwOTgxMjY4CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjEuMV94NjQtc2V0dXAuZXhlCnFMZ3lFWTkrWW82SXM1THJtd0UwbUc0WE00NU9ZUkVxcVFiT3V3MVFISFlqS0k4a1JZcHlHN3daS1k2aCs1K1BzNURkalRhL01PdWtma3ZaL0ZXTERBPT0K",
+      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.1/manxiang-canvas-ui_3.1.1_windows-x64-setup.exe"
     }
   }
 }
