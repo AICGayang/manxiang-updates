@@ -1,11 +1,11 @@
 {
-  "version": "3.1.2",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.1.2\n发布日期：2026-06-09\n\n本次更新：\n\n1. 生图/生视频节点参数记忆\n- 生图节点和生视频节点会记住用户上次选择的生成参数。\n- 下次新建同类节点时，会自动使用上次选择的模型、比例、分辨率、质量、时长、数量等参数作为默认值。\n- 仅记住参数，不会记住提示词、参考素材或生成结果，避免新节点误带上一条创作内容。\n\n2. 视频模型S分辨率与价格显示优化\n- “视频模型S”支持 480P 和 720P 两个分辨率选项。\n- 用户选择 480P 时，自动提交 `veocn-480p`，前端按约 `0.457/秒` 预估消耗。\n- 用户选择 720P 时，自动提交 `veocn2-720p`，前端按约 `0.585/秒` 预估消耗。\n- 请求包含视频参考素材时，视频模型S预估消耗会自动翻倍。\n- 前端仍统一显示为“视频模型S”，生成历史和用量展示不会暴露后端模型名。\n\n3. 图片生成下载体验优化\n- 图片生成进入下载阶段后，会显示已返回的结果链接。\n- 用户可以复制链接到浏览器自行下载，适合网络较慢或软件下载较慢的情况。\n- 下载阶段支持中断软件自动下载，之后可以继续下载。\n- 用户也可以选择本地图片文件作为该节点生成结果，继续用于画布展示、生成历史和下游节点。\n\n4. 批量生成与提示词放大窗口\n- 批量生成节点会汇总视频模型S任务的预估消耗。\n- 提示词放大窗口与外部生成按钮保持一致，会同步显示 `⚡` 预估消耗。\n\n5. 模型配置整理\n- 移除“快速视频模型S”旧入口和旧后端映射。\n- AI 助手、MCP 文档和视频模型配置同步更新模型映射规则。\n\n6. 前端加载性能优化\n- AI 助手面板和 SmartAgent 模块改为懒加载。\n- 拆分应用服务代码包，降低首屏主包体积。",
-  "pub_date": "2026-06-19T00:00:00Z",
+  "version": "3.1.3",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.1.3\n发布日期：2026-06-22\n\n本次更新：\n\n1. 视频模型G分组升级\n- “视频模型G”现在支持两个子选项：“多参”和“单图”。\n- “多参”对应后端模型 ，最多支持 5 张参考图。\n- “单图”对应后端模型 ，最多支持 1 张参考图。\n\n2. 单图模型自动比例匹配\n- “单图”模型连接横图时自动使用 `16:9`。\n- “单图”模型连接竖图时自动使用 `9:16`。\n- “单图”模型连接正方形图时保留比例选择，由用户自行决定。\n- 横图和竖图自动识别后会锁定比例下拉，减少画面被错误比例拉伸的问题。\n\n3. 视频模型G价格显示\n- 视频模型G两个子模型都会在生成按钮显示预估消耗。\n- 统一按约 `0.0357/秒` 计算，并使用 `⚡` 作为消耗符号。\n- 视频模型G时长选项调整为 `6s` 和 `10s`，移除 `12s`、`20s`。\n\n4. AI助手与协议同步\n- AI 助手视频 skill 支持视频模型G的新“多参 / 单图”映射。\n- MCP 文档和模型配置同步更新，手动生成、AI 助手、MCP 创建节点保持一致。\n\n5. 画布交互修复",
+  "pub_date": "2026-06-22T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK3RwbWpsdlhUazl1dDFhcnhDMDE4TmEyZ2M2cHJrZUorUzRkNUEwYlF5MEZHbUZ1dTlpWjd6OTUrZmQ1U1hodWYwYVNjWFlCN1hmZUI2ZE1maHpYOVFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxODYyMTIyCWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjEuMl94NjQtc2V0dXAuZXhlCjRqTER2M1FFK093UUwzM2hBUTdiVkliTGJHaVdvaGJQa0F0eUVPNU5NNlcxSDVUSHhlZWVDZTZWZXFuQXU0RUhPb3lWM0ZmSGh2ZnV0SGJGZFdqbEFnPT0K",
-      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.2/manxiang-canvas-ui_3.1.2_windows-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK3M4c01wUEdHaWJhWHo4aTlCTlpLZzlROHFibHNLSXBiMytOdjBBYllUd2NMWDUvTHFXTDhGbER1UFl4UDMzT1VZZWUrSFRRbHVsZkFvL1pGQ1pESEFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDk1NDA0CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjEuM194NjQtc2V0dXAuZXhlCkQ4dVhlcWRNc1BJeGx3N1FXY0tBQ050R1JXeWxqaCtBZ2EwMmVZaDlmd2RVSmg2RHg5VXZzVUM5d3V3SkZSS3lCeW9DMlNPbzVzMHBZUzAyZURxM0NnPT0K",
+      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.3/manxiang-canvas-ui_3.1.3_windows-x64-setup.exe"
     }
   }
 }
