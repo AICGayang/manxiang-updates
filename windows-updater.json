@@ -1,11 +1,11 @@
 {
-  "version": "3.1.4",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.1.4\n发布日期：2026-06-27\n\n本次更新：\n\n1. 视频模型S分组升级\n- “视频模型S”现在支持两个子选项：“满血版”和“fast版”。\n\n2. 参考素材能力增强\n- 视频模型S支持图片、视频、音频混合参考。\n- 普通生视频最多可选择 12 个参考素材。\n- 提示词输入框和放大提示词窗口继续支持 `@1`、`@2` 等参考素材引用。\n\n3. 价格显示更新\n- 视频模型S“满血版”生成按钮按约 `⚡0.571/秒` 计算预估消耗。\n- 视频模型S“fast版”生成按钮按约 `⚡0.428/秒` 计算预估消耗。\n- 使用视频参考素材时，预估消耗仍按翻倍计算。\n- 批量生成节点会同步汇总视频模型S任务的预估消耗。",
-  "pub_date": "2026-06-27T00:00:00Z",
+  "version": "3.1.5",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.1.5\n发布日期：2026-07-07\n\n本次更新：\n\n1. 项目资产稳定性增强\n- 新增项目资产索引链路，为项目内图片、视频、音频建立更稳定的资产锚点。\n- 打开旧项目时会自动检查并修复节点、生成历史、参考素材和批量结果中的本地资源引用。\n- 可找到真实素材文件时，会自动补建资产索引并回写项目文件，减少后续再次丢失。\n\n2. 减少图片串图和历史错配\n- 历史记录不再按“生图 / 生图_2 / 生图_3”等通用标题猜测素材文件。\n- 宁可显示素材缺失，也避免把错误图片误显示为正确图片。\n- 右键“打开本地文件位置”在旧路径失效时，会优先通过资产锚点重新定位。\n\n3. 入口覆盖补齐\n- 导入素材、重新链接、替换图片、上传音频、抽帧、图片编辑导出、选择本地文件作为结果、继续下载等入口都会同步记录资产锚点。\n- 项目栏拖回画布的素材也会继承对应资产锚点。\n\n4. 视频模型G更新\n- 视频模型G新增 `15s` 时长选项。",
+  "pub_date": "2026-07-07T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK3RwYTczQUtaZW5PQ3N0d3NWNHpmV281c0RpZVF4U2g4SWVmd0M1dVM4OVIwVUdiSFdscEhXdE1YUy9GSWJjdmZVVENlbSsyRytUajlrMTg5enUzMmdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNTUzOTg0CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjEuNF94NjQtc2V0dXAuZXhlCnZRMkp4QTYydU9oSDVBYkJndWdqUmFJVGJGK0U0UTg2UitwSTNORG9ReDFSSktocTZaTTdWak9LaXpQdURtM3huQ01HMDFLZnllWDkxV0szZUFFZ0FBPT0K",
-      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.4/manxiang-canvas-ui_3.1.4_windows-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK29MWFNYSzN6ZGlUL3llZmdwbnRwdlVQWjZqRWEvUmxoWEZlbXM1bjJ0QlBXK2lsUS8vaUpReDcwTTBuNmpCek1ZeVRqSmc1UEcvK1poTnNWVWFNZWdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzk0MTk5CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjEuNV94NjQtc2V0dXAuZXhlCjVMLzZDOUhEZ2JZbnpvd09UYmdEWkhmSUYvdnNHU3llYXpwZE01ckxCc0NTNkxtZm1kQTRNNkdZNW9EZ0E2dnNmTXVQVVRURTRyVUlxRG80YVAzN0N3PT0K",
+      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.5/manxiang-canvas-ui_3.1.5_windows-x64-setup.exe"
     }
   }
 }
