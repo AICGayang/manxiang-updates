@@ -1,11 +1,11 @@
 {
-  "version": "3.1.5",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.1.5\n发布日期：2026-07-07\n\n本次更新：\n\n1. 项目资产稳定性增强\n- 新增项目资产索引链路，为项目内图片、视频、音频建立更稳定的资产锚点。\n- 打开旧项目时会自动检查并修复节点、生成历史、参考素材和批量结果中的本地资源引用。\n- 可找到真实素材文件时，会自动补建资产索引并回写项目文件，减少后续再次丢失。\n\n2. 减少图片串图和历史错配\n- 历史记录不再按“生图 / 生图_2 / 生图_3”等通用标题猜测素材文件。\n- 宁可显示素材缺失，也避免把错误图片误显示为正确图片。\n- 右键“打开本地文件位置”在旧路径失效时，会优先通过资产锚点重新定位。\n\n3. 入口覆盖补齐\n- 导入素材、重新链接、替换图片、上传音频、抽帧、图片编辑导出、选择本地文件作为结果、继续下载等入口都会同步记录资产锚点。\n- 项目栏拖回画布的素材也会继承对应资产锚点。\n\n4. 视频模型G更新\n- 视频模型G新增 `15s` 时长选项。",
-  "pub_date": "2026-07-07T00:00:00Z",
+  "version": "3.1.6",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.1.6\n发布日期：2026-07-15\n\n本次更新：\n\n1. 项目与资产防丢失增强\n- 项目保存改为串行、原子写入，并通过保存修订号阻止旧数据覆盖新数据。\n- 新增多级项目备份、异常临时文件恢复和项目库自动扫描恢复，降低项目列表或项目文件意外丢失的风险。\n- 资产索引改为并发安全写入，并通过稳定资产标识与文件特征保守重映射，减少节点、生成历史和参考素材失联或串图。\n\n2. 参考素材操作修复\n- 参考缩略图删除改为按来源节点精确处理，相同 URL 的素材不再互相误删。\n- 删除参考素材时同步清理画布连接与 AI 助手引用，并自动整理视频模型 S 的 `@` 引用序号。\n- 单次撤销可完整恢复被删除的参考关系。\n\n3. 视频任务等待时间优化\n- 所有异步视频生成任务的轮询等待上限统一提升到一小时，减少长时间排队或生成时被提前判定超时。\n\n4. 参考图上传优化\n- 通用生图、生视频参考图上传前，超过 `2048` 最长边的图片会等比缩小，并保持原图片格式。\n- 最长边未超过 `2048` 的图片保持原文件不变。\n- 视频模型原有最长边 `1536` 的专用预处理规则继续保留，不改变现有接口行为。",
+  "pub_date": "2026-07-15T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK29MWFNYSzN6ZGlUL3llZmdwbnRwdlVQWjZqRWEvUmxoWEZlbXM1bjJ0QlBXK2lsUS8vaUpReDcwTTBuNmpCek1ZeVRqSmc1UEcvK1poTnNWVWFNZWdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzk0MTk5CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjEuNV94NjQtc2V0dXAuZXhlCjVMLzZDOUhEZ2JZbnpvd09UYmdEWkhmSUYvdnNHU3llYXpwZE01ckxCc0NTNkxtZm1kQTRNNkdZNW9EZ0E2dnNmTXVQVVRURTRyVUlxRG80YVAzN0N3PT0K",
-      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.5/manxiang-canvas-ui_3.1.5_windows-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK3VTdmkySFRnQ1JpZEFLN3dUbWJDOUxBUWtrc0ttZjB5MWc0MTJZUmE3azl1QmZHNFFzRFp5ai84Z1V0VFVVRFVPbFY3eVdYdUVud2ljL0t0K1I4bUFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MDk1NTMzCWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjEuNl94NjQtc2V0dXAuZXhlCk9MeHJNeU5tUnNONWxTMVhVWXBlUGQwVmpFZ2h3bXo2bnVNeG05eW5qQll4Y2RuVXpOTnd5UGJwMDFjYnhlSVZqK21xaUNjeml6SEJmUUM1RnE5cENBPT0K",
+      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.6/manxiang-canvas-ui_3.1.6_windows-x64-setup.exe"
     }
   }
 }

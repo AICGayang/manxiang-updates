@@ -1,22 +1,22 @@
 {
-  "version": "3.1.5",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.1.5\n发布日期：2026-07-07\n\n本次更新：\n\n1. 项目资产稳定性增强\n- 新增项目资产索引链路，为项目内图片、视频、音频建立更稳定的资产锚点。\n- 打开旧项目时会自动检查并修复节点、生成历史、参考素材和批量结果中的本地资源引用。\n- 可找到真实素材文件时，会自动补建资产索引并回写项目文件，减少后续再次丢失。\n\n2. 减少图片串图和历史错配\n- 历史记录不再按“生图 / 生图_2 / 生图_3”等通用标题猜测素材文件。\n- 宁可显示素材缺失，也避免把错误图片误显示为正确图片。\n- 右键“打开本地文件位置”在旧路径失效时，会优先通过资产锚点重新定位。\n\n3. 入口覆盖补齐\n- 导入素材、重新链接、替换图片、上传音频、抽帧、图片编辑导出、选择本地文件作为结果、继续下载等入口都会同步记录资产锚点。\n- 项目栏拖回画布的素材也会继承对应资产锚点。\n\n4. 视频模型G更新\n- 视频模型G新增 `15s` 时长选项。",
-  "published_at": "2026-07-07",
+  "version": "3.1.6",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.1.6\n发布日期：2026-07-15\n\n本次更新：\n\n1. 项目与资产防丢失增强\n- 项目保存改为串行、原子写入，并通过保存修订号阻止旧数据覆盖新数据。\n- 新增多级项目备份、异常临时文件恢复和项目库自动扫描恢复，降低项目列表或项目文件意外丢失的风险。\n- 资产索引改为并发安全写入，并通过稳定资产标识与文件特征保守重映射，减少节点、生成历史和参考素材失联或串图。\n\n2. 参考素材操作修复\n- 参考缩略图删除改为按来源节点精确处理，相同 URL 的素材不再互相误删。\n- 删除参考素材时同步清理画布连接与 AI 助手引用，并自动整理视频模型 S 的 `@` 引用序号。\n- 单次撤销可完整恢复被删除的参考关系。\n\n3. 视频任务等待时间优化\n- 所有异步视频生成任务的轮询等待上限统一提升到一小时，减少长时间排队或生成时被提前判定超时。\n\n4. 参考图上传优化\n- 通用生图、生视频参考图上传前，超过 `2048` 最长边的图片会等比缩小，并保持原图片格式。\n- 最长边未超过 `2048` 的图片保持原文件不变。\n- 视频模型原有最长边 `1536` 的专用预处理规则继续保留，不改变现有接口行为。",
+  "published_at": "2026-07-15",
   "platforms": {
     "windows-x86_64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.5/manxiang-canvas-ui_3.1.5_windows-x64-setup.exe",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.5/manxiang-canvas-ui_3.1.5_windows-x64-setup.exe",
-      "sha256": "FA3C70C6CF6F6E5195781D074489BA0A3EE17C477200704C65A36DD59F584116"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.6/manxiang-canvas-ui_3.1.6_windows-x64-setup.exe",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.6/manxiang-canvas-ui_3.1.6_windows-x64-setup.exe",
+      "sha256": "15ABD42C4E9D2064783A8E52558F10515B9EDC44461F45AB1A19C55E59139B30"
     },
     "darwin-x86_64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.5/manxiang-canvas-ui_3.1.5_darwin-x86_64.dmg",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.5/manxiang-canvas-ui_3.1.5_darwin-x86_64.dmg",
-      "sha256": "98A9D96BDABECA7D58711B199D9CDACA8E8CEDE1AE50F3B4BB6C77807B7E792F"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.6/manxiang-canvas-ui_3.1.6_darwin-x86_64.dmg",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.6/manxiang-canvas-ui_3.1.6_darwin-x86_64.dmg",
+      "sha256": "963D30BB51FBE7339ADF9695D09C205FDB20DAE229FC672CA99ECAF4C1A26D99"
     },
     "darwin-aarch64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.5/manxiang-canvas-ui_3.1.5_darwin-aarch64.dmg",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.5/manxiang-canvas-ui_3.1.5_darwin-aarch64.dmg",
-      "sha256": "AE78F553CCCF28AF3B9E1F947C46F9439C332BCA3F435F83FAB1346B85451AE2"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.6/manxiang-canvas-ui_3.1.6_darwin-aarch64.dmg",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.1.6/manxiang-canvas-ui_3.1.6_darwin-aarch64.dmg",
+      "sha256": "6DA1D605EBA682AA781F32EEE77B2174B53BBACF6D2C8CA71753793BDB662544"
     }
   }
 }
