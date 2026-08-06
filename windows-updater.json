@@ -1,11 +1,11 @@
 {
-  "version": "3.2.3",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.2.3\n发布日期：2026-07-29\n\n本次更新：\n\n1. 缺失资产手动重链\n- 节点右键菜单新增“链接资产”，只有后端确认文件确实缺失时才可点击。\n- 用户可重新选择同类型的图片、视频或音频，替换文件会写入当前项目资产库并优先保留原资产 ID。\n- 重链会同步修复相关节点、输出列表、生成历史、参考记录和批量任务，修复结果自动保存到项目。\n\n2. 更稳妥的缺失判断\n- 文件正常、远程资源或后端检查失败时，“链接资产”保持置灰，避免临时渲染失败造成误操作。\n- 同时兼容旧项目绝对路径和当前项目相对路径，方便修复此前已经出现素材丢失提示的项目。\n\n3. 视频模型S-c新增论条模式\n- 视频模型S-c分辨率选项新增“论条”。\n- 普通线路和专用线路使用同一后端模型名，并同步支持手动生成、批量生成和AI助手。",
-  "pub_date": "2026-08-01T00:00:00Z",
+  "version": "3.2.4",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.2.4\n发布日期：2026-08-06\n\n本次更新：\n\n1. 新增视频模型H3\n- 前端显示“视频模型H3”，。\n- 接入 `/v1/videos` 异步提交和任务状态轮询。\n- 固定使用 `2K` 分辨率，支持 4-15 秒时长和文档规定的视频比例。\n\n2. 参考素材支持\n- 支持最多 9 张图片和 3 个音频作为参考素材，不支持视频参考。\n- 图片与音频混合引用时，自动按后端要求校正 `@N` 编号。\n- 手动生视频、图生视频、批量任务和 AI 助手同步支持 H3。\n\n3. 费用预估\n- 生成按钮显示 H3 任务预估费用，按约 `⚡0.1142/秒` 计算。\n- 批量生成任务同步使用统一的 H3 费用计算。",
+  "pub_date": "2026-08-06T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK3BKRGNveEdoVHhsb3J1VWV6cm5nRDJaNXZqSUZUREhiSGRYQUpkTk5XZVZBNHE4Sk1DaU5RcGxMWmJuOTF5OGxFbDFTakF2bGRRcjNycGdobjF5ZXdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1NTUyMDcxCWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjIuM194NjQtc2V0dXAuZXhlClROTHNvRldvWTJTQTNoNU96ZXBWZXkxbml6YVVPenY5VXdocGdXdVF3bDRhQzVlM2Q2MWRPTU41K0QvWjR2dnF0TmxuenVvTW9ENzd0ajJVWk10V0FBPT0K",
-      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.2.3/manxiang-canvas-ui_3.2.3_windows-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK3BvNmVocXkwQUNPZk9wZFh2S3RQdy9GbTIxZytKYXRxQ3FwV2JNYmhwWk1YekFEM0owQ0REN0NDR2M2d0NjR1dsN0JoM3cvTWpWL3UrN3drQStuVWdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1OTk1OTk2CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjIuNF94NjQtc2V0dXAuZXhlCkQ1TGJRUDJ3N1lVZFdkUzF2OUVkWlZ1Ty9vYVBzb2V6MXhXRWxkWWV5T2d1SUU5WWxnTDJOYkNpNFR1VHBnd0lMVUVlSzdDczJZbFd0ZThScmJRcUNRPT0K",
+      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.2.4/manxiang-canvas-ui_3.2.4_windows-x64-setup.exe"
     }
   }
 }
