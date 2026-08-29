@@ -1,11 +1,11 @@
 {
-  "version": "3.2.6",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.2.6\n发布日期：2026-08-17\n\n本次更新：\n\n1. 脚本分析支持断点续写\n- 脚本分析节点改为流式生成，长文本任务会持续显示状态并保存已经完成的内容。\n- 生成意外中断时自动从断点继续，也可以手动点击“从断点继续”。\n- JSON 尾部损坏时只回退到最后一个完整镜头并续写后续内容，不会清空或全量重写已经生成的镜头。\n\n2. 优化脚本分镜规则\n- 加强原文与对白保留、4-15 秒镜头分段、人物表演、走位、连续性、轴线和参考资产绑定规则。\n- 保持原有脚本表格、批量生成分镜图、视频提示词和参考素材绑定功能兼容。\n\n3. 新增项目恢复\n- 项目管理界面新增“项目恢复”按钮，可选择项目文件夹中的 `project.manxiang-project.json` 恢复项目。\n- 支持恢复节点、连接线、参数、生成历史和本地素材引用。\n- 外部目录中的项目会连同完整项目文件夹和 `assets` 一起复制到当前项目库；项目 ID 冲突时会自动生成新 ID，避免覆盖现有项目。\n- 恢复时会自动执行资产路径重映射和修复，并支持在主 JSON 损坏时尝试使用已有备份。",
-  "pub_date": "2026-08-17T00:00:00Z",
+  "version": "3.2.8",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.2.8\n发布日期：2026-08-29\n\n本次更新：\n\n1. 视频模型H3参考音频支持\n- 修复 H3 参考音频未在节点参考素材预览中显示的问题。\n\n2. 视频模型H3按条计费\n- H3 生成费用改为约 `⚡2.142/条`，不再按视频秒数估算。",
+  "pub_date": "2026-08-29T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK3M2RzFHNExiTjZNZVpSdVR1dVY0d21JN3BaWjJGcElxMG9Fc1FweGQ0QXRiRVQxYTFnNFlOa01sWEFHMFJQTHlsaUdDWTlTbmVvODNBQkRTWEtLQndrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2OTUxNTY4CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjIuNl94NjQtc2V0dXAuZXhlCkZLVGU1UXNqcC94RmJqMU9xU1dZQ2N2SERpZlRndFZrOUNkL3Raa2pnc3hTUjIzQ2hOT0diTGswdndqQVFRWGk5YlZpaXBrZENXd21WTE9JRk11QkNBPT0K",
-      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.2.6/manxiang-canvas-ui_3.2.6_windows-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK2h1SnJrMC95MzUvOW14MzYyb0ttUkNSbmQyUkNtcWpPQ2tyWE40TUdRT1hKT1loVkptVGZXbHJrUVlXdUJYdXpMSlpxemE0WnBtL1J6bUpTYjhFOHdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MDA0MDM0CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjIuOF94NjQtc2V0dXAuZXhlCjZnTVVBZ0JybG4rOFMyLzhWWW45ZVNPY2VEZEZwMm80ZTZqQ3Z4dGF5eWZ6VnNNeFdJTjVQMFowV1JFTHBnY1ErSWY1b2xCUXhlUU1ZL1kxc3NwQURBPT0K",
+      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.2.8/manxiang-canvas-ui_3.2.8_windows-x64-setup.exe"
     }
   }
 }
