@@ -1,11 +1,11 @@
 {
-  "version": "3.2.9",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.2.9\n发布日期：2026-08-31\n\n本次更新：\n\n1. 新增视频模型论次\n- 新增母类别“视频模型论次”，下含 `2.5` 和 `2.0` 两个子选项。\n- `2.5` 支持 `480P`、`720P`，对应后端模型 `ty25-sd25proc-480p`、`ty25-sd25proc-720p`。\n- `2.0` 固定使用 `720P`，对应后端模型 `ty-sd2proc`。\n\n2. 按次计费和参数限制\n- 2.5 480P 约 `⚡7.857/条`，2.5 720P 约 `⚡10.714/条`，2.0 720P 约 `⚡6.857/条`。\n- 三个模型都不支持纯文生视频，至少需要一张参考图片。\n- 2.5 支持 15-30 秒和 `9:16`、`16:9`；2.0 支持 4-15 秒和全部画幅比例。\n\n3. 全入口和异步链路统一\n- 普通生视频、图生视频、批量生成、AI助手和 MCP 均同步支持该模型类别。\n- 参考图片继续沿用调用视频 API 前的压缩与图床上传处理。\n- 使用 `/v1/videos` 创建任务、`/v1/videos/{task_id}` 轮询结果，等待上限为 1 小时。\n\n版本号：v3.2.8\n发布日期：2026-08-29\n\n本次更新：\n\n1. 视频模型H3参考音频支持\n- 修复 H3 参考音频未在节点参考素材预览中显示的问题。\n- H3 音频参考会通过 `reference_audios` 传递，提示词支持按文档使用 `@N` 引用图片和音频。\n\n2. 视频模型H3按条计费\n- H3 生成费用改为约 `⚡2.142/条`，不再按视频秒数估算。\n\n 版本号：v3.2.7\n 发布日期：2026-08-21\n\n本次更新：\n\n1. 项目与资产防丢稳定性升级\n- 项目文件采用原子写入、多级备份和保存修订保护，防止异常退出或并发保存造成项目内容被旧快照覆盖。\n- 新增项目库身份识别和启动自动扫描恢复，保存目录配置丢失或项目未登记时可重新找回本地项目。\n- 未首次保存但已有节点的项目，关闭软件时也会自动落盘；保存失败会阻止退出并显示具体原因。\n\n2. 修复素材丢失和串图\n- 为项目素材、输出结果、缩略图和生成历史完善永久资产 ID 与索引记录。\n- 恢复时优先使用有效的精确路径；不同文件误用同一资产 ID 时会自动拆分，避免多个节点显示成同一张图。\n- 素材索引损坏时保留原始证据，不再用空索引覆盖；缩略图失败不会影响主素材保存。\n\n3. 导入导出完整性升级\n- 修复同名素材在项目包中互相覆盖，以及多结果素材路径错位的问题。\n- 生成历史结果、历史缩略图和历史参考素材会完整随项目包导出并在导入后重新建立关联。\n- 项目包缺素材、包含重复路径或危险路径时会明确失败，不再留下半成品项目或损坏安装包。\n\n4. 保存并发与共通资产优化\n- 修复项目重命名、封面编辑和自动保存之间的竞态，避免旧保存覆盖刚完成的编辑。\n- 共通资产索引增加锁、原子写入和备份，磁盘暂时不可访问时不会误删资产记录。",
-  "pub_date": "2026-08-31T00:00:00Z",
+  "version": "3.2.10",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.2.10\n发布日期：2026-09-06\n\n本次更新：\n\n1. API Key 主密钥保存\n- 设置中的 API Key 新增“保存”按钮，输入期间不会反复写入配置。\n- 点击保存后，填写的 Key 会作为全局主密钥持久化，软件重启后继续使用。\n- 自动移除旧版模型独立 Key 覆盖项，同时保留模型的线路、端口、模型 ID 和查询配置，避免旧 Key 覆盖新 Key。\n\n2. 视频模型 S 与 W3\n3. 项目恢复资产保护\n- 项目恢复会重新绑定资产索引；若某个丢失素材的永久资产 ID 在项目库中只有一个通过校验的候选文件，会自动恢复到原节点。\n- 出现多个候选文件时不再猜测替换，避免多个节点显示为同一素材或把错误文件写入历史记录。",
+  "pub_date": "2026-09-07T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK2d3SFptYy9RcDZURzVDZTMvd1RPdmk3QTAveXliM0I4U0JYOGtxampoRExVS3o1Z2M4Z1g5ZzR6cERacUdrSE8wZlpDamJCRVMzV0laaFEwQ1NibXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MTQ3MjM4CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjIuOV94NjQtc2V0dXAuZXhlCjM4YW0zTEUwVzlhbVY5RkgzNEJqK1JESlZYZGZzNGRrTkppSTg5NDBQMzVZN3lOb1dCdGxTNURIRC9TTy9DaS9OTGlmSG1YV000OWRlZzBhS3lOdURBPT0K",
-      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.2.9/manxiang-canvas-ui_3.2.9_windows-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK2tldTEraVlDVDBBeUYwalFaUFpMTG5UeFNKMzVPK1pTdzB2b0pGTEFuVnJvVTBseWprbDE4c2ZVTnR6a3RvQnVUZVNFTGlIaVNIdER5N2hpdFVFakE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4NzU3NjU1CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjIuMTBfeDY0LXNldHVwLmV4ZQpGMWhBdE83QTJ2RExXT2xTSTUweW10MU1rMTBoNExBblRVQ2V3V1JrK21UNWhjaUlrMVNoc0ZqOWRjcWZNR01lWVJSaEFhbURvZlhJbTU4N0NCY01Edz09Cg==",
+      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.2.10/manxiang-canvas-ui_3.2.10_windows-x64-setup.exe"
     }
   }
 }
