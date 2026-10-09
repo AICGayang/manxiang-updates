@@ -1,22 +1,22 @@
 {
-  "version": "3.3.0",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.3.0\n发布日期：2026-09-30\n\n本次更新：\n\n1. 新增轮次视频模型S2.5\n- 新增独立模型“轮次视频模型S2.5”，后端模型为 `ty25-sd25proc2-720p`。\n- 分辨率固定并默认使用 `720P`，支持 `4-30` 秒和 `16:9`、`9:16`、`1:1`、`4:3`、`3:4`、`21:9` 全部标准比例。\n- 支持纯文生视频，也支持最多 10 张图片、10 段视频和 10 段音频参考，总参考素材上限为 30 个。\n- 普通生成、批量生成、AI 助手和 MCP 共用同一套请求与异步轮询链路，轮询等待上限为 1 小时；前端不显示预估价格。\n\n2. 参考素材传输与稳定性优化\n- 视频模型 S 和视频模型论次支持在提示词中重复 `@` 同一参考素材，前端语义引用保留，后端只上传和传输一次素材。\n- 参考素材记录增加永久资产 ID 传递，减少批量任务和多次引用时素材映射错位的风险。\n- 参考图片继续沿用视频 API 调用前的压缩、图床上传和链接复用流程。\n\n3. 图片比例与提示词交互优化\n- 漫想文字满血版新增 `7:10` 比例，并按 1K、2K、4K 像素上限自动计算安全尺寸。\n- MCP 生图入口同步支持 `7:10` 比例。\n- 修复提示词抽屉滚轮事件穿透到画布的问题，抽屉内滚动不再带动画布缩放。\n\n4. 专用线路与桌面启动优化\n- 切换到专用线路时，“购买”按钮自动使用专用购买地址；其他线路继续使用原购买地址。\n- 专用线路余额和消费记录显示系数调整为 `0.9`。\n- 桌面启动脚本会分别检查 Vite 和 Tauri CLI，依赖缺失或安装不完整时自动修复，减少启动失败。\n\n版本号：v3.2.10\n发布日期：2026-09-06\n\n本次更新：\n\n1. API Key 主密钥保存\n- 设置中的 API Key 新增“保存”按钮，输入期间不会反复写入配置。\n- 点击保存后，填写的 Key 会作为全局主密钥持久化，软件重启后继续使用。\n- 自动移除旧版模型独立 Key 覆盖项，同时保留模型的线路、端口、模型 ID 和查询配置，避免旧 Key 覆盖新 Key。\n\n2. 视频模型 S 与 W3\n3. 项目恢复资产保护\n- 项目恢复会重新绑定资产索引；若某个丢失素材的永久资产 ID 在项目库中只有一个通过校验的候选文件，会自动恢复到原节点。\n- 出现多个候选文件时不再猜测替换，避免多个节点显示为同一素材或把错误文件写入历史记录。",
-  "published_at": "2026-10-04",
+  "version": "3.3.1",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.3.1\n发布日期：2026-10-09\n\n本次更新：\n\n1. 新增漫想图片2.1\n- 新增图片模型“漫想图片2.1”，后端模型 ID 为 `gemini-nano-banana-2.1`。\n- 完整继承漫想图片2的文生图、参考图生图、比例、1K/2K/4K 分辨率和最多 14 张参考图机制。\n- 普通生成、批量生成、AI 助手和 MCP 共用同一套 Gemini 原生请求与异步轮询链路。\n\n2. 应用弹窗稳定性修复\n- 修复复制图片成功或失败提示偶尔显示为浏览器原生弹窗的问题。\n- 应用弹窗监听与待显示队列现在可跨开发热更新保持，弹窗宿主短暂重载时不再退回浏览器 `alert` 或 `confirm`。\n- 全量检查提示与确认弹窗入口，统一使用漫想+应用内弹窗样式。\n\n版本号：v3.3.0\n发布日期：2026-09-30\n\n本次更新：\n\n1. 新增轮次视频模型S2.5\n- 新增独立模型“轮次视频模型S2.5”，后端模型为 `ty25-sd25proc2-720p`。\n- 分辨率固定并默认使用 `720P`，支持 `4-30` 秒和 `16:9`、`9:16`、`1:1`、`4:3`、`3:4`、`21:9` 全部标准比例。\n- 支持纯文生视频，也支持最多 10 张图片、10 段视频和 10 段音频参考，总参考素材上限为 30 个。\n- 普通生成、批量生成、AI 助手和 MCP 共用同一套请求与异步轮询链路，轮询等待上限为 1 小时；前端不显示预估价格。\n\n2. 参考素材传输与稳定性优化\n- 视频模型 S 和视频模型论次支持在提示词中重复 `@` 同一参考素材，前端语义引用保留，后端只上传和传输一次素材。\n- 参考素材记录增加永久资产 ID 传递，减少批量任务和多次引用时素材映射错位的风险。\n- 参考图片继续沿用视频 API 调用前的压缩、图床上传和链接复用流程。\n\n3. 图片比例与提示词交互优化\n- 漫想文字满血版新增 `7:10` 比例，并按 1K、2K、4K 像素上限自动计算安全尺寸。\n- MCP 生图入口同步支持 `7:10` 比例。\n- 修复提示词抽屉滚轮事件穿透到画布的问题，抽屉内滚动不再带动画布缩放。\n\n4. 专用线路与桌面启动优化\n- 切换到专用线路时，“购买”按钮自动使用专用购买地址；其他线路继续使用原购买地址。\n- 专用线路余额和消费记录显示系数调整为 `0.9`。\n- 桌面启动脚本会分别检查 Vite 和 Tauri CLI，依赖缺失或安装不完整时自动修复，减少启动失败。\n\n版本号：v3.2.10\n发布日期：2026-09-06\n\n本次更新：\n\n1. API Key 主密钥保存\n- 设置中的 API Key 新增“保存”按钮，输入期间不会反复写入配置。\n- 点击保存后，填写的 Key 会作为全局主密钥持久化，软件重启后继续使用。\n- 自动移除旧版模型独立 Key 覆盖项，同时保留模型的线路、端口、模型 ID 和查询配置，避免旧 Key 覆盖新 Key。\n\n2. 视频模型 S 与 W3\n3. 项目恢复资产保护\n- 项目恢复会重新绑定资产索引；若某个丢失素材的永久资产 ID 在项目库中只有一个通过校验的候选文件，会自动恢复到原节点。\n- 出现多个候选文件时不再猜测替换，避免多个节点显示为同一素材或把错误文件写入历史记录。",
+  "published_at": "2026-10-09",
   "platforms": {
     "windows-x86_64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.0/manxiang-canvas-ui_3.3.0_windows-x64-setup.exe",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.0/manxiang-canvas-ui_3.3.0_windows-x64-setup.exe",
-      "sha256": "5C12C3136E4F5AEBCCE847B1CB10F5BB5EBE6F7B1886829BDF51CC1083753CF3"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.1/manxiang-canvas-ui_3.3.1_windows-x64-setup.exe",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.1/manxiang-canvas-ui_3.3.1_windows-x64-setup.exe",
+      "sha256": "8DDD26837F67A848CA758D2E46E878C3825CC7BEC4E7C481063937254DE1999A"
     },
     "darwin-x86_64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.0/manxiang-canvas-ui_3.3.0_darwin-x86_64.dmg",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.0/manxiang-canvas-ui_3.3.0_darwin-x86_64.dmg",
-      "sha256": "D4C65BE7D1061F390361816B725A176EBFE048C49340165A18546003B1D3B90A"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.1/manxiang-canvas-ui_3.3.1_darwin-x86_64.dmg",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.1/manxiang-canvas-ui_3.3.1_darwin-x86_64.dmg",
+      "sha256": "2C4F89DABC6E01CC7B1ACED0446CAB2BBBD0EA2ABCF6577B94DD9D8E7ED62FB2"
     },
     "darwin-aarch64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.0/manxiang-canvas-ui_3.3.0_darwin-aarch64.dmg",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.0/manxiang-canvas-ui_3.3.0_darwin-aarch64.dmg",
-      "sha256": "D26219656C2E96A6C3AA851918E9E9AFCF24AFDE27D4A9FFCBCCF41A07B33967"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.1/manxiang-canvas-ui_3.3.1_darwin-aarch64.dmg",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.1/manxiang-canvas-ui_3.3.1_darwin-aarch64.dmg",
+      "sha256": "F5352A6F1DD0374C981200C4D4A8337B0E29758CCE5B15B42C1C10C116CBA247"
     }
   }
 }
