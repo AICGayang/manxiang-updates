@@ -1,11 +1,11 @@
 {
-  "version": "3.3.2",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.3.2\n发布日期：2026-10-12\n\n本次更新：\n\n1. 新增便宜视频模型2.0\n- 新增视频模型“便宜视频模型2.0”，后端模型 ID 为 `ty-sd2pro2c`。\n- 分辨率固定为 `720P`，支持纯文生视频，以及最多 9 张图片、3 段视频和 3 段音频参考，总参考素材上限为 15 个。\n- 普通生视频、图生视频、批量生成和 AI 助手统一使用 TY 视频请求与异步轮询链路。\n\n2. 视频模型列表精简\n- 移除“便宜视频模型S”和“视频模型V”的新建及选择入口，并同步移除 AI 助手与 MCP 文档中的公开映射。\n- 新建普通视频任务默认使用“便宜视频模型2.0”；新建首尾帧任务默认使用“视频模型G / 多参”。\n- 旧项目中已经保存的相关节点继续保留兼容识别，避免升级后旧画布无法打开或节点配置损坏。",
-  "pub_date": "2026-10-12T00:00:00Z",
+  "version": "3.3.3",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.3.3\n发布日期：2026-10-15\n\n本次更新：\n\n1. 大画布操作性能优化\n- 新增节点和连接线空间索引，框选节点、连接目标推荐和连接线点击检测不再每次遍历整张画布。\n- 画布只渲染当前视野及缓冲区域内的节点和连接线，减少节点较多时的无效渲染与缩放、平移卡顿。\n- 优化节点、节点内容和小地图的重复渲染，拖拽过程使用轻量预览并在松开鼠标后统一提交位置。\n- 自动保存调整为空闲时执行，非活动视频缩略图仅预加载元数据，降低大量节点同时存在时的主线程和媒体解码压力。\n\n2. 图片与视频保存到桌面\n- 图片或视频节点的右键菜单新增“保存到桌面”，可直接把当前结果保存到系统桌面。\n- 优先复制项目内本地素材；本地文件不可用时自动通过结果 URL 流式下载，大视频不再经过前端内存。\n- 保留原始媒体内容和扩展名，同名文件自动生成新名称，保存完成后可直接打开文件所在位置。\n- 此功能使用独立导出链路，不修改节点路径、项目 JSON、资产 ID、生成历史和原有下载目录。",
+  "pub_date": "2026-10-15T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK3IxMmZtRUR4QjZtNjJVR2ZDQ0hSeHM3RW05TllPWlRZaU9mUngweTVvZHd1c1FZOVQ2ZVVkY0k3NGlYb1pLUFpEQmVabjlwVWdsNUJoRFlwTllZS1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzkwNzk5CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjMuMl94NjQtc2V0dXAuZXhlCkdIenBWSWFpZTY0Ly9BT2U2Ui9hY0NtczMwT3hldmU4ZEg5d0xKRnNHcHNlbVBmZU56S05nd1YxdXJOTHBSSU95N2dROVI5OUxSaFUzZjZJSzhuMURRPT0K",
-      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.2/manxiang-canvas-ui_3.3.2_windows-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK2lIT255ek9zcUxScUk1NXUycERwdUlFNS9OdDVINGhLdmZDWjlQekY3NVptQnNhL05XaSsxNmFzemkvS1ZYV3NLZXp6czd3L3NEalNQN29KdWlsOUFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDQwMDkzCWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjMuM194NjQtc2V0dXAuZXhlCklLVmJlQXpiai95dHREWm5ucGE5RUpjRWtyYi9zQlNCWjY2R1BFd1h1WUdHRVYzTUZtd3JQSitCdmYxS2dEYjd4dmNaZ05qZjVvWlZ5cUJUM2sxY0FnPT0K",
+      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.3/manxiang-canvas-ui_3.3.3_windows-x64-setup.exe"
     }
   }
 }
