@@ -1,11 +1,11 @@
 {
-  "version": "3.3.4",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.3.4\n发布日期：2026-11-02\n\n本次更新：\n\n1. 图片下载进度与备用下载修复\n- 修复生成图片进入下载阶段后只显示“图片下载中”、不显示百分比的问题。\n- 桌面端改为每个下载任务使用独立进度通道，避免多个节点同时下载时进度丢失或互相干扰。\n- 备用下载链路支持流式读取；能够获取文件总大小时显示实时百分比，无法获取时显示已接收的数据大小。\n- 重新下载、中断后继续下载和低精度节点视图统一显示真实下载状态。\n\n2. API Key 与专用线路持久化修复\n- 修复点击保存后，软件重启仍可能恢复成旧 API Key 的问题。\n- 当前线路与主密钥会同时写入桌面端原生配置文件，并在界面和模型初始化前恢复。\n- 首次启动新版时会自动迁移已有配置，不需要用户重新填写 Key。\n- 主密钥优先于历史模型专属 Key，避免遗留配置覆盖新保存的密钥。\n- 专用线路保存时会原子保存线路与 Key，避免快速切换和保存造成配置错配。\n\n3. MCP 正式分发与本地桥接安全\n- 新增可直接交给支持标准 stdio MCP 的 AI Agent 安装的 Windows x64 分发包构建流程。\n- MCP 分发包自带 Node.js 运行时、安装说明、配置示例和文件校验清单。\n- 本地桥接新增自动生成的本机令牌鉴权，MCP 会自动读取令牌，无需用户手动填写或暴露软件 API Key。\n- 打包流程增加敏感信息扫描，避免密钥被误写入分发包。",
-  "pub_date": "2026-11-02T00:00:00Z",
+  "version": "3.3.5",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.3.5\n发布日期：2026-11-04\n\n本次更新：\n\n1. 视频模型W3新增论秒与论条模式\n- “视频模型W3”调整为母类别，可选择“论秒”或“论条”。\n- 论秒模式继续使用原有W3链路，480P对应 `tyw3-wan3.0-480p`，720P对应 `tyw3-wan3.0-720p`。\n- 论条模式新增 `tyw3-wan3c-720p`，普通线路与专用线路均使用相同后端模型名称。\n\n2. W3论条参数与参考素材支持\n- 论条模式固定使用720P，生成时长支持5-30秒。\n- 支持最多10张图片、5段视频和5段音频参考，总参考素材不超过20个。\n- 继续使用现有视频参考素材预处理、图床上传、全局 `@N` 编号和异步任务轮询链路。\n- W3轮询等待上限保持3000秒。\n\n3. W3参数统一与费用显示\n- 论秒和论条统一支持 `16:9`、`9:16`、`1:1`、`4:3`、`3:4`、`21:9` 比例，并移除 `adaptive` 选项。\n- 论秒和论条的时长选项统一为5-30秒；旧节点中保存的2-4秒会自动调整为5秒。\n- 论条生成按钮新增费用预估：普通线路约 `⚡3.71/条`，专用线路约 `⚡3.00/条`。\n- 批量生成、AI助手和消费记录同步识别W3论条模型。",
+  "pub_date": "2026-11-04T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK3Btb0xrUDBadWkzbU1ySkNOUnh6YStzWGlBVXRzekp2UVhwN1hSMG1acnNGNlJaN1E4a0k1RkUzOVJHaUlzZVJ3Q05ldWZrcFlPdEZQRTBmYXhHZHc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNTg1OTE4CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjMuNF94NjQtc2V0dXAuZXhlClhnSjk3eUJNeEVsSXJVNHFML0k0c09TOTdMZ1ZvVHBCdGx1QkROdW5ZRmt5cGRvZWgvT3ltTFdIc3NDT004OGQ2bjVITVdMaEVnYmM0ZUNQVlVXc0JRPT0K",
-      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.4/manxiang-canvas-ui_3.3.4_windows-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK2dUWDVkWDdSaGxUWHpGTnhxbUxvK0VGNTV5VVhET0pnWnVuMXhJd0VUcVR4bXo5bkZSK1k3c1lOcTM2cU9jS1lTSlQ2LzBMN0ZhWEhENkNNdFNhZmdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzY1MDg4CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjMuNV94NjQtc2V0dXAuZXhlCmpwQlZBNjlwYkVpTW04OWlNaVFKTTFzTW5MNnBBTUtWUm40UmVoUkFtTGNsbmtJS3B1bXRtTHl1UTFnUVRxWElubXp2a1hSMEI0T0xjQW1DK2JYUkNRPT0K",
+      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.5/manxiang-canvas-ui_3.3.5_windows-x64-setup.exe"
     }
   }
 }
