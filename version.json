@@ -1,22 +1,22 @@
 {
-  "version": "3.3.5",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.3.5\n发布日期：2026-11-04\n\n本次更新：\n\n1. 视频模型W3新增论秒与论条模式\n- “视频模型W3”调整为母类别，可选择“论秒”或“论条”。\n- 论秒模式继续使用原有W3链路，480P对应 `tyw3-wan3.0-480p`，720P对应 `tyw3-wan3.0-720p`。\n- 论条模式新增 `tyw3-wan3c-720p`，普通线路与专用线路均使用相同后端模型名称。\n\n2. W3论条参数与参考素材支持\n- 论条模式固定使用720P，生成时长支持5-30秒。\n- 支持最多10张图片、5段视频和5段音频参考，总参考素材不超过20个。\n- 继续使用现有视频参考素材预处理、图床上传、全局 `@N` 编号和异步任务轮询链路。\n- W3轮询等待上限保持3000秒。\n\n3. W3参数统一与费用显示\n- 论秒和论条统一支持 `16:9`、`9:16`、`1:1`、`4:3`、`3:4`、`21:9` 比例，并移除 `adaptive` 选项。\n- 论秒和论条的时长选项统一为5-30秒；旧节点中保存的2-4秒会自动调整为5秒。\n- 论条生成按钮新增费用预估：普通线路约 `⚡3.71/条`，专用线路约 `⚡3.00/条`。\n- 批量生成、AI助手和消费记录同步识别W3论条模型。",
-  "published_at": "2026-11-04",
+  "version": "3.3.6",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.3.6\n发布日期：2026-11-06\n\n本次更新：\n\n1. 图片任务轮询更加稳定\n- 单次查询超时或网络失败不再立即终止图片任务，会等待下一个轮询周期继续查询。\n- 连续4次查询失败后才停止并显示具体错误，减少临时网络波动造成的误报失败。\n- 查询重试期间会在节点中显示当前连续失败次数。\n\n2. 支持继续查询原图片任务\n- 异步图片任务会保存任务 ID、模型名称和查询地址。\n- 查询超时、连续失败或软件意外关闭后，可在生图节点内点击“重新查询任务”，无需重新付费生成。\n- 软件重启后仍会保留未完成任务的查询入口；任务成功或明确失败后自动清理任务信息。\n\n3. 统一异步生图入口\n- 手动生图、AI导演分镜生图及相关图片模型统一使用新的轮询容错和任务恢复链路。\n- 专用线路与普通线路均同步支持本次优化。",
+  "published_at": "2026-11-06",
   "platforms": {
     "windows-x86_64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.5/manxiang-canvas-ui_3.3.5_windows-x64-setup.exe",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.5/manxiang-canvas-ui_3.3.5_windows-x64-setup.exe",
-      "sha256": "0CF22C54FB6DF81DB1D8C2669E075238B2BC1E6E99B75E944E379C08248AFEA3"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.6/manxiang-canvas-ui_3.3.6_windows-x64-setup.exe",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.6/manxiang-canvas-ui_3.3.6_windows-x64-setup.exe",
+      "sha256": "AFB69086F4B721688AA8596F03E59B87CDF71176CD19CE1FD5F3C0015CBF9E78"
     },
     "darwin-x86_64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.5/manxiang-canvas-ui_3.3.5_darwin-x86_64.dmg",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.5/manxiang-canvas-ui_3.3.5_darwin-x86_64.dmg",
-      "sha256": "C079BCC1E404DA7FDC2D4222A8355C33DDC99B3FBE7F7221A9D6F144EBD09B7A"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.6/manxiang-canvas-ui_3.3.6_darwin-x86_64.dmg",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.6/manxiang-canvas-ui_3.3.6_darwin-x86_64.dmg",
+      "sha256": "9016228F08C26B063441B63ABBF4FBAA513F630C28B0554BB315D006D3969F29"
     },
     "darwin-aarch64": {
-      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.5/manxiang-canvas-ui_3.3.5_darwin-aarch64.dmg",
-      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.5/manxiang-canvas-ui_3.3.5_darwin-aarch64.dmg",
-      "sha256": "F9C6EF5D9D5E6F3CBCA7D4CB0BC781C3EB2D0FE444E8BA4BD0204C2ACE9DF2D9"
+      "installer_url": "https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.6/manxiang-canvas-ui_3.3.6_darwin-aarch64.dmg",
+      "proxy_installer_url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.6/manxiang-canvas-ui_3.3.6_darwin-aarch64.dmg",
+      "sha256": "0DC8E55737FC12FA32ED5287F9DDF49E1F4662D6F5CC54608B0E15E04ED08A7F"
     }
   }
 }
