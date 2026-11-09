@@ -1,11 +1,11 @@
 {
-  "version": "3.3.7",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.3.7\n发布日期：2026-11-07\n\n本次更新：\n\n1. 论次视频模型S2.5升级\n- 原“轮次视频模型S2.5”更名为“论次视频模型S2.5”。\n- 后端模型替换为 `ty25-sd25proc-1080p`，普通线路与专用线路使用相同模型名称。\n- 模型固定使用1080P，支持5-30秒时长和六种画面比例。\n\n2. 参考素材与费用调整\n- 支持纯文生视频，也支持最多9张图片和3段音频参考。\n- 不再支持视频参考，参考素材选择器和生成请求会同步校验。\n- 生成按钮和批量任务显示约 `⚡5/条` 的费用预估。\n\n3. 兼容已有项目\n- 旧项目中的原模型节点会自动切换到新1080P模型。\n- 旧批量任务、AI助手模型状态和本地模型配置同步迁移。\n- 消费记录和模型显示名称同步更新为“论次视频模型S2.5”。",
-  "pub_date": "2026-11-07T00:00:00Z",
+  "version": "3.3.8",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.3.8\n发布日期：2026-11-07\n\n本次更新：\n\n- 优化了视频等待时长的轮询规则。",
+  "pub_date": "2026-11-09T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK3R0b3VHYWthZ0VaSFVMQnp4L1gxcm5oVllhWnBRanpnR1pJR2xEUm9EU05Hb3JrcUpDR2R5am1rMkIrUVArTitZVHJ1ZW91N25id3lxcWZSZjU5MmdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDMyMjQ3CWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjMuN194NjQtc2V0dXAuZXhlCi9qWGhoc1dBWnRrU001d3NMWkIrblRmb05lWlNIMlJXYU8wWm9mVTVUSXlXRGNINmlUa3F6UDk0dHQ3VE9LRmE5bEM5cGpSeVliUGx1Tnp5OWFzQ0FBPT0K",
-      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.7/manxiang-canvas-ui_3.3.7_windows-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK2ttL0M4Q3J3OUd4djBsV3RELzc1YjNMZjB0TGQ2c1BGT3kyMmRrVU0vcm9Pbm92VVllci8zYWRKV1VORytXTGhYWEVPMXpybElNQjRkSkwvNTUrV0FzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MjEzMjYzCWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjMuOF94NjQtc2V0dXAuZXhlCk5GZWtTZ1VKaDY1Y2V0aHJ2Si9RYmVUbmVWcUlGUVQ4aDJGY3pRbzAvdXNSYWJRQTBYUUg3M1JCTXVxV2tzM2pjS3hFN1BUKzBSWTVhaHhSd2sxS0JnPT0K",
+      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.8/manxiang-canvas-ui_3.3.8_windows-x64-setup.exe"
     }
   }
 }
