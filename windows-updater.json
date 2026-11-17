@@ -1,11 +1,11 @@
 {
-  "version": "3.3.8",
-  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.3.8\n发布日期：2026-11-07\n\n本次更新：\n\n- 优化了视频等待时长的轮询规则。",
-  "pub_date": "2026-11-09T00:00:00Z",
+  "version": "3.3.9",
+  "notes": "# 漫想+ 桌面版更新说明\n\n版本号：v3.3.9\n发布日期：2026-11-17\n\n本次更新：\n\n1. 论次视频模型S2.5调整\n- 前端模型名称保持不变，后端模型切换为 `ty25-sd25proc2-720p`。\n- 模型分辨率由固定1080P调整为固定720P。\n\n2. 费用与兼容性\n- 生成费用预估调整为约 `⚡7.85/条`。\n- 旧项目中的1080P模型配置会自动迁移到新的720P模型。",
+  "pub_date": "2026-11-17T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK2ttL0M4Q3J3OUd4djBsV3RELzc1YjNMZjB0TGQ2c1BGT3kyMmRrVU0vcm9Pbm92VVllci8zYWRKV1VORytXTGhYWEVPMXpybElNQjRkSkwvNTUrV0FzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MjEzMjYzCWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjMuOF94NjQtc2V0dXAuZXhlCk5GZWtTZ1VKaDY1Y2V0aHJ2Si9RYmVUbmVWcUlGUVQ4aDJGY3pRbzAvdXNSYWJRQTBYUUg3M1JCTXVxV2tzM2pjS3hFN1BUKzBSWTVhaHhSd2sxS0JnPT0K",
-      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.8/manxiang-canvas-ui_3.3.8_windows-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRYXRwMVlrbHRnK2xKYmRqc1c0N1Nld3FWbURwVVFtbmV6STROM0pueEhGcUVpcHZqWUtpcDF0UGpCNXhwZENnUUtpWWwxMHJDTDBzZjRDZ0xZVTQ0S1RVNm9KaXRCaEFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTA0MDMxCWZpbGU65ryr5oOzKyDnlLvluINVSV8zLjMuOV94NjQtc2V0dXAuZXhlCnJ4Vk15Y1F1bWVmTUVBUFN4S3Q1SHROcFZCRlJHRkxLaUovb0hORlU5UVl1R2gwTUhWWFZMSGRqeWxrbjNjTmhUZ3IwRHpYeUlqdmxoOXdyT2tkbUNRPT0K",
+      "url": "https://gh-proxy.com/https://github.com/AICGayang/manxiang-updates/releases/download/v3.3.9/manxiang-canvas-ui_3.3.9_windows-x64-setup.exe"
     }
   }
 }
